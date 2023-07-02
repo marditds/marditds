@@ -13,18 +13,18 @@ export const Home = () => {
     }
 
     return (
-        <Container>
+        <Container className='hire--me--container'>
             <p className="d-flex align-items-center">
                 Hi
                 <span className={!isExpanded ? 'd-none' : 'd-flex'}>re me!</span>
                 <br />
                 <Button
                     onClick={handleReadMore}
-                    className={`ms-2 home--read--more--btn ${isClicked ? 'clicked' : ''}`}
+                    className={`home--read--more--btn ${isClicked ? 'clicked' : ''}`}
                 >
                     Read {!isExpanded ? 'More' : 'Less'}
                 </Button>
             </p>
-        </Container >
+        </Container>
     )
 }

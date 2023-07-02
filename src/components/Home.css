@@ -1,6 +1,17 @@
 .home--read--more--btn {
+    background-color: transparent !important;
+    color: black !important;
+    border: 0 !important;
     position: relative;
-    transition: transform 0.1s ease !important;
+    transition: transform 0.3s ease-out !important;
+}
+
+.home--read--more--btn:hover,
+.home--read--more--btn:focus,
+.home--read--more--btn:active {
+    background-color: transparent !important;
+    color: black !important;
+    border: 0 !important;
 }
 
 .home--read--more--btn.clicked {
