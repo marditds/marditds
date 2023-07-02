@@ -1,0 +1,8 @@
+.home--read--more--btn {
+    position: relative;
+    transition: transform 0.1s ease !important;
+}
+
+.home--read--more--btn.clicked {
+    transform: translateX(8px) !important;
+}
