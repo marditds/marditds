@@ -31,9 +31,11 @@ export const Home = () => {
                     Read {!isExpanded ? 'More' : 'Less'}
                 </Button>
             </p>
-            <Titles className='' />
+
+            <Titles />
+
             <p>
-                Check out my Resume here.
+                Check out my resume and skills here.
                 <LuChevronDown
                     size={20}
                     className='resume--icon'
