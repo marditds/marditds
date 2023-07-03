@@ -46,7 +46,7 @@ export const Home = () => {
                     <Titles />
 
                     <p className='mt-5'>
-                        Check out my resume and skills here.
+                        Check out my resume here.
                         <Link to={{
                             pathname: '/',
                             hash: '#resume',
