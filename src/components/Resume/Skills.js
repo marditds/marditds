@@ -9,6 +9,8 @@ export const Skills = () => {
         <>
             <Row>
                 <h3>Programming Languages</h3>
+
+
                 <Row xs={2} sm={3}>
                     <Col className='icon--col my-4'><SiReact size={55} />ReactJS</Col>
                     <Col className='icon--col my-4'><SiBootstrap size={55} />Bootstrap</Col>
@@ -42,7 +44,6 @@ export const Skills = () => {
                 <Row xs={2} sm={3}>
                     <Col className='icon--col my-4'><SiAdobephotoshop size={55} />Adobe Photoshop</Col>
                     <Col className='icon--col my-4'><SiEclipseide size={55} />Eclipse</Col>
-                    <Col className='icon--col my-4'><SiVisualstudio size={55} />Visual Studio 2019</Col>
                 </Row>
             </Row>
             {/* <Row>
