@@ -19,23 +19,39 @@ body {
     transition: box-shadow 0.3s ease;
 }
 
-
 .home--read--more--btn {
-    padding: 0px 5px 0px 5px !important;
+    padding: 0px 5px;
     margin-left: 12px;
-    background-color: transparent !important;
-    color: black !important;
-    border: 1px solid transparent !important;
+    background-color: transparent;
+    color: black;
+    border: 1px solid transparent;
     position: relative;
     transition: transform 0.3s ease-out, filter 0.3s ease, border 0.3s ease !important;
+    animation: readMoreBtn 2s infinite;
 }
+
+@keyframes readMoreBtn {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #edbb64;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+
 
 .home--read--more--btn:hover,
 .home--read--more--btn:active {
-    border: 1px solid #edbb64 !important;
+    /* border: 1px solid #edbb64 !important; */
     background-color: transparent !important;
     color: black !important;
-    filter: drop-shadow(0px 0px 2px #B1CAF6);
+    filter: drop-shadow(0px 0px 2px #edbb64);
     /* border: 0 !important; */
 }
 
