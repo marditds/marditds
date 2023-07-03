@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap';
-import { Home } from './components/Home'
+import { Home } from './components/Home/Home'
 
 function App() {
   return (

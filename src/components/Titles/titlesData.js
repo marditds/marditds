@@ -1,0 +1,1 @@
+export const titlesData = ['frontend developer', 'frontend engineer', 'frontend software engineer', 'react developer', 'software developer', 'software engineer', 'UI Developer', 'UI Engineer'];
