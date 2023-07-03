@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Questrial&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
     scroll-behavior: smooth;
 }
@@ -7,6 +9,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+}
+
+.hire--me--txt {
+    /* transition: filter 0.3s ease; */
+    transition: box-shadow 0.3s ease;
+}
+
+.hire--me--txt.expanded {
+    box-shadow: 0px 0px 5px #edbb64;
+    /* filter: drop-shadow(0px 0px 2px #edbb64); */
 }
 
 .home--read--more--btn {
@@ -21,12 +36,12 @@ body {
 .home--read--more--btn:active {
     background-color: transparent !important;
     color: black !important;
-    filter: drop-shadow(0px 0px 2px cornflowerblue);
+    filter: drop-shadow(0px 0px 2px #B1CAF6);
     border: 0 !important;
 }
 
 .home--read--more--btn.clicked {
-    filter: drop-shadow(0px 0px 2px cornflowerblue);
+    filter: drop-shadow(0px 0px 2px #B1CAF6);
     transform: translateX(8px) !important;
 }
 
@@ -37,7 +52,7 @@ body {
 }
 
 .resume--icon:hover {
-    filter: drop-shadow(0px 0px 2px cornflowerblue);
+    filter: drop-shadow(0px 0px 2px #B1CAF6);
 }
 
 @keyframes iconPosition {

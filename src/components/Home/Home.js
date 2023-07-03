@@ -31,18 +31,20 @@ export const Home = () => {
         <Container>
             <div className='home--content'>
                 <div>
-                    <p className="d-flex align-items-center">
-                        Hi <span className={!isExpanded ? 'd-flex' : "d-none"}>!</span>
-                        <span className={!isExpanded ? 'd-none' : 'd-flex'}>re me!</span>
-                        <br />
+                    <div className='d-flex align-items-center mb-2'>
+                        <p className={`my-0 d-flex align-items-center hire--me--txt ${!isExpanded ? '' : 'expanded'}`}>
+                            Hi <span className={!isExpanded ? 'd-flex' : "d-none"}>!</span>
+                            <span className={!isExpanded ? 'd-none' : 'd-flex'}>re me!</span>
+                            <br />
+
+                        </p>
                         <Button
                             onClick={handleReadMore}
-                            className={`home--read--more--btn ${isClicked ? 'clicked' : ''}`}
+                            className={`py-0 home--read--more--btn ${isClicked ? 'clicked' : ''}`}
                         >
                             Read {!isExpanded ? 'More' : 'Less'}
                         </Button>
-                    </p>
-
+                    </div>
                     <Titles />
 
                     <p className='mt-5'>
