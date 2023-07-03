@@ -9,17 +9,18 @@ export const Skills = () => {
         <>
             <Row>
                 <h3>Programming Languages</h3>
-                <Row>
+                <Row xs={2} sm={3}>
                     <Col className='icon--col my-4'><SiReact size={55} />ReactJS</Col>
                     <Col className='icon--col my-4'><SiBootstrap size={55} />Bootstrap</Col>
                     <Col className='icon--col my-4'><SiHtml5 size={55} />HTML5</Col>
+                    <Col className='icon--col my-4 d-sm-none'><SiCss3 size={55} />CSS3</Col>
                 </Row>
-                <Row>
-                    <Col className='icon--col my-4'><SiCss3 size={55} />CSS3</Col>
+                <Row xs={2} sm={3}>
+                    <Col className='icon--col my-4 d-none d-sm-grid'><SiCss3 size={55} />CSS3</Col>
                     <Col className='icon--col my-4'><SiJavascript size={55} />JavaScript</Col>
                     <Col className='icon--col my-4'>< SiNodedotjs size={55} />NodeJS</Col>
                 </Row>
-                <Row>
+                <Row xs={2} sm={3}>
                     <Col className='icon--col my-4'><SiPhp size={55} />PHP</Col>
                     <Col className='icon--col my-4'><SiMysql size={55} />MySQL</Col>
                     <Col className='icon--col my-4'><BiLogoJava size={55} />Java</Col>
