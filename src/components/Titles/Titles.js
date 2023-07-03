@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { titlesData } from './titlesData';
 import { LuChevronLeft, LuChevronRight } from 'react-icons/lu';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import './Titles.css';
 
 export const Titles = () => {
@@ -29,6 +30,7 @@ export const Titles = () => {
     return (
         <Row>
             <Col>I'm a
+
                 <LuChevronLeft
                     size={25}
                     onClick={handlePrevTitle}

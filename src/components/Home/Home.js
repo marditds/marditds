@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Button } from 'react-bootstrap';
-import { Title, Titles } from '../Titles/Titles'
+import { Titles } from '../Titles/Titles';
+import { LuChevronDown } from 'react-icons/lu';
+
 import './Home.css';
 
 export const Home = () => {
@@ -12,6 +14,9 @@ export const Home = () => {
         setIsExpanded((preVal) => !preVal);
         setIsCicked((preVal) => !preVal);
     }
+
+
+
 
     return (
         <Container className='hire--me--container'>
@@ -26,7 +31,15 @@ export const Home = () => {
                     Read {!isExpanded ? 'More' : 'Less'}
                 </Button>
             </p>
-            <Titles />
+            <Titles className='' />
+            <p>
+                Check out my Resume here.
+                <LuChevronDown
+                    size={20}
+                    className='resume--icon'
+                />
+            </p>
+
         </Container>
     )
 }
