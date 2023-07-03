@@ -1,3 +1,7 @@
+.titles--div {
+    margin-left: 35px;
+}
+
 .titles--btn {
     cursor: pointer;
     font-weight: lighter !important;

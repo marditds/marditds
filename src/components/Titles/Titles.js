@@ -19,7 +19,7 @@ export const Titles = () => {
 
     const handleNextTitle = () => {
         setCurrIdx((preVal) => preVal + 1);
-        if (currIdx > 6) {
+        if (currIdx > 5) {
             setCurrIdx((preVal) => 0)
         }
     }
@@ -28,27 +28,33 @@ export const Titles = () => {
 
 
     return (
-        <Row className=' position-absolute'>
-            <Col>I'm a
+        // <Row className=' position-absolute'>
+        <Row  >
+            <Col className='d-flex'>
+                I'm a
 
-                <LuChevronLeft
-                    size={25}
-                    onClick={handlePrevTitle}
-                    className='titles--btn left position-absolute'
-                />
+                <div className='position-absolute titles--div'>
 
-                {
-                    titles.slice(currIdx, currIdx + 1).map((title, idx) => {
-                        return (
-                            <span key={idx} className='title--text'> {title} </span>
-                        )
-                    })
-                }
-                <LuChevronRight
-                    size={25}
-                    onClick={handleNextTitle}
-                    className='titles--btn right '
-                />
+                    <LuChevronLeft
+                        size={25}
+                        onClick={handlePrevTitle}
+                        className='titles--btn left position-absolute'
+                    />
+
+                    {
+                        titles.slice(currIdx, currIdx + 1).map((title, idx) => {
+                            return (
+                                <span key={idx} className='title--text'> {title} </span>
+                            )
+                        })
+                    }
+                    <LuChevronRight
+                        size={25}
+                        onClick={handleNextTitle}
+                        className='titles--btn right '
+                    />
+
+                </div>
             </Col>
         </Row>
     )
