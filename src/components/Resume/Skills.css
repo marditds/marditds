@@ -6,6 +6,7 @@ svg {
     display: grid;
     place-items: center;
     transition: 0.3s;
+    text-align: center;
 }
 
 .icon--col:hover {

@@ -28,17 +28,18 @@ export const Skills = () => {
             </Row>
             <Row>
                 <h3>Tools & Software</h3>
-                <Row>
+                <Row xs={2} sm={3}>
                     <Col className='icon--col my-4'><SiGithub size={55} />GitHub</Col>
                     <Col className='icon--col my-4'><SiJira size={55} />Jira</Col>
                     <Col className='icon--col my-4'>< SiFigma size={55} />Figma</Col>
+                    <Col className='icon--col my-4 d-grid d-sm-none'><SiGitlab size={55} />GitLab</Col>
                 </Row>
-                <Row>
-                    <Col className='icon--col my-4'><SiGitlab size={55} />GitLab</Col>
+                <Row xs={2} sm={3}>
+                    <Col className='icon--col my-4 d-none d-sm-grid'><SiGitlab size={55} />GitLab</Col>
                     <Col className='icon--col my-4'><SiVisualstudiocode size={55} />Visual Studio Code</Col>
                     <Col className='icon--col my-4'><SiAdobedreamweaver size={55} />Adobe Dreamweaver</Col>
                 </Row>
-                <Row>
+                <Row xs={2} sm={3}>
                     <Col className='icon--col my-4'><SiAdobephotoshop size={55} />Adobe Photoshop</Col>
                     <Col className='icon--col my-4'><SiEclipseide size={55} />Eclipse</Col>
                     <Col className='icon--col my-4'><SiVisualstudio size={55} />Visual Studio 2019</Col>
