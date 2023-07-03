@@ -45,9 +45,10 @@ export const Home = () => {
                             Read {!isExpanded ? 'More' : 'Less'}
                         </Button>
                     </div>
+
                     <Titles />
 
-                    <p className='mt-5'>
+                    <p className='mt-5 check--resume--txt'>
                         Check out my resume here.
                         <Link to={{
                             pathname: '/',

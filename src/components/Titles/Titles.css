@@ -1,5 +1,9 @@
+.titles--content {
+    font-size: 24px;
+}
+
 .titles--div {
-    margin-left: 35px;
+    margin-left: 55px;
 }
 
 .titles--btn {
@@ -14,6 +18,7 @@
 
 .left {
     animation: pointLeft 750ms infinite;
+    margin-top: 7px;
 }
 
 @keyframes pointLeft {
@@ -50,4 +55,18 @@
 
 .title--text {
     margin-left: 32px;
+}
+
+@media (max-width: 575px) {
+    .titles--content {
+        font-size: 16px;
+    }
+
+    .titles--div {
+        margin-left: 35px;
+    }
+
+    .left {
+        margin-top: 0px;
+    }
 }

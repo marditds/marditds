@@ -30,7 +30,7 @@ export const Titles = () => {
     return (
         // <Row className=' position-absolute'>
         <Row  >
-            <Col className='d-flex'>
+            <Col className='d-flex titles--content'>
                 I'm a
 
                 <div className='position-absolute titles--div'>
@@ -44,7 +44,7 @@ export const Titles = () => {
                     {
                         titles.slice(currIdx, currIdx + 1).map((title, idx) => {
                             return (
-                                <span key={idx} className='title--text'> {title} </span>
+                                <span key={idx} className='title--text '> {title} </span>
                             )
                         })
                     }
