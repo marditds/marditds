@@ -3,17 +3,19 @@
     color: black !important;
     border: 0 !important;
     position: relative;
-    transition: transform 0.3s ease-out !important;
+    transition: transform 0.3s ease-out, filter 0.3s ease !important;
 }
 
 .home--read--more--btn:hover,
-.home--read--more--btn:focus,
 .home--read--more--btn:active {
     background-color: transparent !important;
     color: black !important;
+    filter: drop-shadow(0px 0px 2px cornflowerblue);
     border: 0 !important;
 }
 
 .home--read--more--btn.clicked {
+    filter: drop-shadow(0px 0px 2px cornflowerblue);
+
     transform: translateX(8px) !important;
 }
