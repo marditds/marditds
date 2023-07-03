@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 import { Container, Button } from 'react-bootstrap';
 import { Titles } from '../Titles/Titles';
 import { LuChevronDown } from 'react-icons/lu';
-
+import { Resume } from '../Resume/Resume';
 import './Home.css';
 
 export const Home = () => {
@@ -15,8 +16,16 @@ export const Home = () => {
         setIsCicked((preVal) => !preVal);
     }
 
+    const handleIconClick = () => {
+        const resumeContent = document.getElementById('resume');
 
-
+        if (resumeContent) {
+            window.scrollTo({
+                top: resumeContent.offsetTop,
+                behavior: 'smooth',
+            });
+        }
+    };
 
     return (
         <Container className='hire--me--container'>
@@ -36,12 +45,21 @@ export const Home = () => {
 
             <p>
                 Check out my resume and skills here.
-                <LuChevronDown
-                    size={20}
-                    className='resume--icon'
-                />
+                <Link to={{
+                    pathname: '/',
+                    hash: '#resume',
+                }}
+                    onClick={handleIconClick}
+                >
+                    <LuChevronDown
+                        size={20}
+                        className='resume--icon'
+                    />
+                </Link>
             </p>
 
+
+            <Resume />
         </Container>
     )
 }
