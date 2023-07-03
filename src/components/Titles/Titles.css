@@ -7,3 +7,43 @@
 .titles--btn:hover {
     filter: drop-shadow(0px 0px 2px cornflowerblue);
 }
+
+.left {
+    animation: pointLeft 750ms infinite;
+}
+
+@keyframes pointLeft {
+    from {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 5px;
+    }
+
+    to {
+        margin-left: 0px;
+    }
+}
+
+.right {
+    animation: pointRight 750ms infinite;
+}
+
+@keyframes pointRight {
+    0% {
+        margin-left: 0px;
+    }
+
+    50% {
+        margin-left: 5px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+.title--text {
+    margin-left: 32px;
+}

@@ -2,6 +2,13 @@ body {
     scroll-behavior: smooth;
 }
 
+.home--content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home--read--more--btn {
     background-color: transparent !important;
     color: black !important;
@@ -35,7 +42,7 @@ body {
 
 @keyframes iconPosition {
     from {
-        margin-top: -5px;
+        margin-top: 0px;
     }
 
     50% {
@@ -43,6 +50,6 @@ body {
     }
 
     to {
-        margin-top: -5px;
+        margin-top: 0px;
     }
 }

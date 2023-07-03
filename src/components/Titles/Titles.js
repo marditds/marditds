@@ -28,25 +28,26 @@ export const Titles = () => {
 
 
     return (
-        <Row>
+        <Row className=' position-absolute'>
             <Col>I'm a
 
                 <LuChevronLeft
                     size={25}
                     onClick={handlePrevTitle}
-                    className='titles--btn'
+                    className='titles--btn left position-absolute'
                 />
+
                 {
                     titles.slice(currIdx, currIdx + 1).map((title, idx) => {
                         return (
-                            <span key={idx}> {title} </span>
+                            <span key={idx} className='title--text'> {title} </span>
                         )
                     })
                 }
                 <LuChevronRight
                     size={25}
                     onClick={handleNextTitle}
-                    className='titles--btn'
+                    className='titles--btn right '
                 />
             </Col>
         </Row>
