@@ -27,7 +27,7 @@ body {
     border: 1px solid transparent;
     position: relative;
     transition: transform 0.3s ease-out, filter 0.3s ease, border 0.3s ease !important;
-    animation: readMoreBtn 2s infinite;
+    animation: readMoreBtn 1.5s infinite;
 }
 
 @keyframes readMoreBtn {
