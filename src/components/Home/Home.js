@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { Container, Button } from 'react-bootstrap';
-import { Titles } from '../Titles/Titles';
+import { Titles } from './Titles/Titles';
 import { LuChevronDown } from 'react-icons/lu';
 import { Resume } from '../Resume/Resume';
 import './Home.css';
