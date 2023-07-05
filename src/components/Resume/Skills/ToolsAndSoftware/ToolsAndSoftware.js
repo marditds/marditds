@@ -5,7 +5,7 @@ import './ToolsAndSoftware.css';
 
 export const ToolsAndSoftware = () => {
     return (
-        <Row className='justify-content-center my-4'>
+        <Row className='justify-content-center mt-3 mb-4'>
             <Row xs={2} sm={3} className='icon--row'>
                 <Col className='icon--col'>
                     <SiGithub size={55} />GitHub

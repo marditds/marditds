@@ -6,9 +6,9 @@ import './Programming.css';
 
 export const Programming = () => {
     return (
-        <Row className='justify-content-center my-4'>
+        <Row className='justify-content-center mt-3 mb-4'>
 
-            <Row xs={2} sm={3} className='mt-sm-4'>
+            <Row xs={2} sm={3}>
                 <Col className='icon--col my-4 my-sm-0'><SiReact size={55} />ReactJS</Col>
                 <Col className='icon--col my-4 my-sm-0'><SiBootstrap size={55} />Bootstrap</Col>
                 <Col className='icon--col'><SiHtml5 size={55} />HTML5</Col>
@@ -19,7 +19,7 @@ export const Programming = () => {
                 <Col className='icon--col my-4 my-sm-0'><SiJavascript size={55} />JavaScript</Col>
                 <Col className='icon--col my-4 my-sm-0'>< SiNodedotjs size={55} />NodeJS</Col>
             </Row>
-            <Row xs={2} sm={3} className='mb-sm-4'>
+            <Row xs={2} sm={3}>
                 <Col className='icon--col'><SiPhp size={55} />PHP</Col>
                 <Col className='icon--col'><SiMysql size={55} />MySQL</Col>
                 <Col className='icon--col my-4 my-sm-0'><BiLogoJava size={55} />Java</Col>
