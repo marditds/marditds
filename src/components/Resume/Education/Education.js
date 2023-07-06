@@ -1,7 +1,11 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Education.css';
+import CSUNLogo from '../../../assets/csunCSLogo.jpg';
+import { RiComputerLine } from 'react-icons/ri';
+import { PiComputerTowerBold } from 'react-icons/pi';
+import { PiComputerTower } from 'react-icons/pi';
 
 export const Education = () => {
     return (
@@ -11,11 +15,19 @@ export const Education = () => {
             <Row>
                 <Col>
                     <Col xs={12} sm={8}>
-                        <span className='fw-bold hakop'>Bachelor of Science in Computer Science</span>
+                        <h5 className='fw-bold mb-0'>
+                            Bachelor of Science in Computer Science
+                            <RiComputerLine
+                                className='education--icon'
+                                size={35} />
+                            <PiComputerTowerBold
+                                className='education--icon'
+                                size={35} />
+                        </h5>
                     </Col>
                     <Col>
                         <Link to={`https://www.csun.edu`} target='_blank'>
-                            California State University, Northridge (CSUN)
+                            <Image src={CSUNLogo} className='school--logo' fluid />
                         </Link>
                     </Col>
                 </Col>
