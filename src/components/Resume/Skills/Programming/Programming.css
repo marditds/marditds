@@ -18,22 +18,11 @@
     transition: 0.3s;
 }
 
-.icon--col svg:nth-child(odd) {
-    display: none !important;
-}
-
-.icon--col svg:nth-child(even) {
-    /* color: transparent !important; */
-    transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translate3d(4px, 9px, 0px);
-    /* position: absolute; */
-    transition: 0.3s;
-}
-
-.icon--col:hover svg:nth-child(even) {
+.icon--col:hover svg {
     display: grid;
     color: #EDBB64 !important;
     /* transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translateX(4px) translateY(9px) translateZ(-40px); */
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(-40px);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(-40px);
 
 }
 
