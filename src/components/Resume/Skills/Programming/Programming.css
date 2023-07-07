@@ -19,7 +19,6 @@
 }
 
 .icon--col svg:nth-child(even) {
-    /* display: none; */
     color: transparent !important;
     transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translate3d(4px, 9px, -20px);
     position: absolute;
