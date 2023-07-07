@@ -9,8 +9,15 @@ export const Programming = () => {
         <Row className='justify-content-center mt-3 mb-4'>
 
             <Row xs={2} sm={3}>
-                <Col className='icon--col my-4 my-sm-0'><SiReact className='react--icon' size={55} />ReactJS</Col>
-                <Col className='icon--col my-4 my-sm-0'><SiBootstrap size={55} />Bootstrap</Col>
+                <Col className='icon--col my-4 my-sm-0'>
+                    <SiReact className='react--icon' size={55} />
+                    <SiReact className='react--icon' size={55} />
+                    ReactJS
+                </Col>
+                <Col className='icon--col my-4 my-sm-0'>
+                    <SiBootstrap size={55} />
+                    <SiBootstrap size={55} />
+                    Bootstrap</Col>
                 <Col className='icon--col'><SiHtml5 size={55} />HTML5</Col>
                 <Col className='icon--col d-grid d-sm-none'><SiCss3 size={55} />CSS3</Col>
             </Row>
