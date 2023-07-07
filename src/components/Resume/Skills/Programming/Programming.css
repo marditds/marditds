@@ -33,7 +33,7 @@
     display: grid;
     color: #EDBB64 !important;
     /* transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translateX(4px) translateY(9px) translateZ(-40px); */
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(4px) translateY(0px) translateZ(-40px);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(-40px);
 
 }
 
