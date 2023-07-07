@@ -1,5 +1,5 @@
 .icon--col {
-    display: inline-block;
+    /* display: inline-block; */
     place-items: center;
     transition: 0.3s;
     text-align: center;
@@ -18,21 +18,23 @@
     transition: 0.3s;
 }
 
+.icon--col svg:nth-child(odd) {
+    display: none !important;
+}
+
 .icon--col svg:nth-child(even) {
-    color: transparent !important;
-    transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translate3d(4px, 9px, -20px);
-    position: absolute;
+    /* color: transparent !important; */
+    transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translate3d(4px, 9px, 0px);
+    /* position: absolute; */
     transition: 0.3s;
 }
 
 .icon--col:hover svg:nth-child(even) {
     display: grid;
     color: #EDBB64 !important;
-    transform:
-        rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translateX(4px) translateY(9px) translateZ(-40px);
+    /* transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translateX(4px) translateY(9px) translateZ(-40px); */
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(4px) translateY(0px) translateZ(-40px);
 
-    /* transform: translateY(-20px); */
-    /* filter: drop-shadow(-20px -50px 0px #EDBB64); */
 }
 
 
