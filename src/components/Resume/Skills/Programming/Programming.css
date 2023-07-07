@@ -14,7 +14,6 @@
 .icon--col svg {
     color: #6495ed !important;
     transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg);
-    /* filter: drop-shadow(-26px -50px 1px transparent); */
     filter: drop-shadow(0px 0px 1px transparent);
     transition: 0.3s;
 }
@@ -22,7 +21,7 @@
 .icon--col svg:nth-child(even) {
     /* display: none; */
     color: transparent !important;
-    transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translateX(4px) translateY(9px) translateZ(-20px);
+    transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translate3d(4px, 9px, -20px);
     position: absolute;
     transition: 0.3s;
 }
