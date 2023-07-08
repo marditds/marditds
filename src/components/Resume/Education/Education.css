@@ -1,3 +1,7 @@
+.education--row {
+    background-color: #B1CAF6;
+}
+
 .education--content {
     font-size: 18px !important;
 }
@@ -13,5 +17,5 @@
 }
 
 .school--logo {
-    max-width: 180px;
+    max-width: 160px;
 }

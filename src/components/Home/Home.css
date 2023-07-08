@@ -2,6 +2,7 @@
 
 body {
     scroll-behavior: smooth;
+    background-color: #B1CAF6 !important;
 }
 
 .home--content {
