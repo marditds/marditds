@@ -11,7 +11,6 @@ body {
     align-items: center;
     font-family: 'Quicksand', sans-serif;
     background-color: #B1CAF6;
-
     color: white;
 
 }
@@ -43,7 +42,7 @@ body {
 @keyframes readMoreBtn {
     0% {
         border-color: transparent;
-        filter: drop-shadow(0px 0px 5px #edbb64);
+        filter: drop-shadow(0px 0px 10px #edbb64) !important;
 
     }
 
@@ -55,7 +54,7 @@ body {
 
     100% {
         border-color: transparent;
-        filter: drop-shadow(0px 0px 5px #edbb64);
+        filter: drop-shadow(0px 0px 10px #edbb64) !important;
 
     }
 }
