@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Education.css';
@@ -8,6 +8,24 @@ import { PiComputerTowerBold } from 'react-icons/pi';
 import { PiComputerTower } from 'react-icons/pi';
 
 export const Education = () => {
+
+    const [screenSize, setScreenSize] = useState({ width: window.innerWidth, height: window.innerHeight });
+
+    useEffect(() => {
+        const handleResize = () => {
+            setScreenSize({ width: window.innerWidth, height: window.innerHeight });
+        };
+
+
+        window.addEventListener('resize', handleResize);
+
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
     return (
         <Container fluid className='education--row pt-3 pb-3'>
             <Container>
@@ -16,15 +34,23 @@ export const Education = () => {
                     <Row>
                         <Col>
                             <Col xs={12} sm={8}>
-                                <h5 className='fw-bold mb-0'>
-                                    Bachelor of Science in Computer Science
-                                    <RiComputerLine
-                                        className='education--icon'
-                                        size={35} />
-                                    <PiComputerTowerBold
-                                        className='education--icon'
-                                        size={35} />
-                                </h5>
+                                <p className='fw-bold mb-0'>
+                                    <span className='d-none d-sm-inline'>
+                                        Bachelor of Science{" "}
+                                    </span>
+                                    <span className='d-inline d-sm-none'>
+                                        BS{" "}
+                                    </span>
+                                    in Computer Science
+                                    <span className='d-inline-block'>
+                                        <RiComputerLine
+                                            className='education--icon'
+                                            size={screenSize.width > 575 ? 35 : 25} />
+                                        <PiComputerTowerBold
+                                            className='education--icon'
+                                            size={screenSize.width > 575 ? 35 : 25} />
+                                    </span>
+                                </p>
                             </Col>
                             <Col>
                                 <Link to={`https://www.csun.edu`} target='_blank'>
@@ -37,7 +63,7 @@ export const Education = () => {
                     <Row className='mt-4'>
                         <Col>
                             <Col xs={12} sm={8}>
-                                <span className='fw-bold'>Associate of Science in Web Development</span>
+                                <p className='fw-bold'>Associate of Science in Web Development</p>
                             </Col>
                             <Col>
                                 <Link to={`https://www.glendale.edu`} target='_blank'>

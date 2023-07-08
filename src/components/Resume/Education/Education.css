@@ -19,3 +19,9 @@
 .school--logo {
     max-width: 160px;
 }
+
+@media (max-width: 575px) {
+    .education--content {
+        font-size: 16px !important;
+    }
+}
