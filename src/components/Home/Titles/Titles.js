@@ -51,7 +51,7 @@ export const Titles = () => {
                     <LuChevronRight
                         size={25}
                         onClick={handleNextTitle}
-                        className='titles--btn right '
+                        className='titles--btn right position-absolute'
                     />
 
                 </div>

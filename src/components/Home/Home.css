@@ -10,10 +10,13 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
+    background-color: #B1CAF6;
+
+    color: white;
+
 }
 
 .hire--me--txt {
-    /* transition: filter 0.3s ease; */
     transition: box-shadow 0.3s ease;
 }
 
@@ -22,7 +25,7 @@ body {
     margin-left: 12px;
     font-size: 24px;
     background-color: transparent;
-    color: black;
+    color: white;
     border: 1px solid transparent;
     position: relative;
     transition: transform 0.3s ease-out, filter 0.3s ease, border 0.3s ease !important;
@@ -33,6 +36,8 @@ body {
 .home--read--more--btn,
 .check--resume--txt {
     font-size: 24px;
+    filter: drop-shadow(0px 0px 2px #969696) !important;
+
 }
 
 @keyframes readMoreBtn {
@@ -44,7 +49,7 @@ body {
 
     50% {
         border-color: #edbb64;
-        filter: drop-shadow(0px 0px 2px #ffffff);
+        filter: drop-shadow(0px 0px 2px #969696);
 
     }
 
@@ -61,13 +66,14 @@ body {
 .home--read--more--btn:active {
     /* border: 1px solid #edbb64 !important; */
     background-color: transparent !important;
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
     /* border: 0 !important; */
 }
 
 .home--read--more--btn.clicked {
     border: 1px solid #edbb64 !important;
-    filter: drop-shadow(0px 0px 5px #B1CAF6) !important;
+    /* filter: drop-shadow(0px 0px 5px #B1CAF6) !important; */
+    filter: drop-shadow(0px 0px 5px #edbb64) !important;
     transform: translateX(8px) !important;
 }
 
@@ -76,10 +82,13 @@ body {
     animation: iconPosition 750ms infinite;
     transition: filter 0.3s ease !important;
     margin-top: 10px;
+    transition: 0.3s !important;
 }
 
+
 .resume--icon:hover {
-    filter: drop-shadow(0px 0px 2px #B1CAF6);
+    color: white;
+    filter: drop-shadow(0px 0px 2px #ffffff) !important;
 }
 
 @keyframes iconPosition {

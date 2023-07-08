@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Contianer, Row, Col, Container } from 'react-bootstrap';
 import './Skills.css';
 import { Programming } from './Programming/Programming';
 import { ToolsAndSoftware } from './ToolsAndSoftware/ToolsAndSoftware';
@@ -7,15 +7,23 @@ import { ToolsAndSoftware } from './ToolsAndSoftware/ToolsAndSoftware';
 export const Skills = () => {
     return (
         <>
-            <section>
-                <h3 className='mb-0 pb-0'>Programming Languages</h3>
-                <Programming />
-            </section>
+            <Container fluid className='prgrm--row'>
+                <Container >
+                    <section className='pt-3 pb-3'>
+                        <h3 className='mb-0 pb-0'>Programming Languages</h3>
+                        <Programming />
+                    </section>
+                </Container>
+            </Container>
 
-            <section>
-                <h3 className='mb-0 pb-0'>Tools & Software</h3>
-                <ToolsAndSoftware />
-            </section>
+            <Container fluid className='tools--row'>
+                <Container >
+                    <section className='pt-3 pb-3'>
+                        <h3 className='mb-0 pb-0'>Tools & Software</h3>
+                        <ToolsAndSoftware />
+                    </section>
+                </Container>
+            </Container >
         </>
     )
 }

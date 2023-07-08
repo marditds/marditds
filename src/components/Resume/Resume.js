@@ -7,12 +7,12 @@ import { Experience } from './Experience/Experience';
 
 export const Resume = () => {
     return (
-        <Row id='resume' >
+        <div id='resume' >
 
             <Skills />
             <Education />
             <Experience />
 
-        </Row>
+        </div>
     )
 }

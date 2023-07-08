@@ -1,7 +1,7 @@
 #resume {
     height: 100vh !important;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     font-family: 'Quicksand', sans-serif;
 }

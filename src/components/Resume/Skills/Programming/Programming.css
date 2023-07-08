@@ -1,5 +1,12 @@
+.prgrm--row {
+    /* background: linear-gradient(0deg, rgba(218, 230, 251, 0.8155637254901961) 0%, rgba(255, 255, 255, 1) 50%), linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(218, 230, 251, 0.8155637254901961) 100%);
+    background-position: bottom, top;
+    background-repeat: no-repeat;
+    background-size: 100% 50%, 100% 50%; */
+}
+
 .icon--col {
-    /* display: inline-block; */
+    display: grid;
     place-items: center;
     transition: 0.3s;
     text-align: center;
@@ -8,7 +15,7 @@
 }
 
 .icon--col:hover {
-    filter: drop-shadow(0px 0px 2px #edbb64);
+    filter: drop-shadow(0px 0px 8px #edbb64);
 }
 
 .icon--col svg {
@@ -20,7 +27,7 @@
 
 .icon--col:hover svg {
     display: grid;
-    color: #EDBB64 !important;
+    /* color: #EDBB64 !important; */
     /* transform: rotateX(118deg) rotateY(180deg) rotateZ(-155deg) translateX(4px) translateY(9px) translateZ(-40px); */
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(-40px);
 
