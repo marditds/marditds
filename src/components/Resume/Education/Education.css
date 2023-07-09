@@ -5,17 +5,26 @@
 .education--content {
     font-size: 18px !important;
     height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.degree--icon,
+.education--icon {
+    margin-left: 3px;
+    vertical-align: bottom !important;
+}
+
+.degree--icon {
+    margin-right: 3px;
 }
 
 .education--icon {
     color: rgb(0, 0, 0) !important;
     /* filter: drop-shadow(0px 0px 5px #EDBB64); */
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
 
-.education--icon:first-child {
-    margin-left: 8px;
-}
+/* .education--icon:first-child {} */
 
 .school--logo {
     max-width: 160px;
