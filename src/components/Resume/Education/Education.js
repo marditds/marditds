@@ -31,7 +31,7 @@ export const Education = () => {
                     <section className=''>
                         <h3>Education</h3>
 
-                        <p>I have a Bachelore's degree
+                        <p>I have a Bachelor's degree
                             <span className='degree--icon'>
                                 <PiCertificate
                                     size={screenSize.width > 575 ? 35 : 25} />
@@ -46,7 +46,7 @@ export const Education = () => {
                                     // className='education--icon'
                                     size={screenSize.width > 575 ? 35 : 25} />
                             </span>
-                            from the California State University - Northridge.</p>
+                            from California State University - Northridge. I also have an Associate of Science degree from Glendale Community College.</p>
                     </section>
                 </Container>
             </Container>

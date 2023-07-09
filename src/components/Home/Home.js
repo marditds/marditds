@@ -19,7 +19,7 @@ export const Home = () => {
 
 
     const handleIconClick = (targetId) => (event) => {
-        event.preventDefault();
+        // event.preventDefault();
 
         const targetElement = document.getElementById(targetId);
         // const skills = document.getElementById('skills');
