@@ -5,7 +5,6 @@ import './Education.css';
 import CSUNLogo from '../../../assets/csunCSLogo.png';
 import { RiComputerLine } from 'react-icons/ri';
 import { PiComputerTowerBold } from 'react-icons/pi';
-import { PiComputerTower } from 'react-icons/pi';
 
 export const Education = () => {
 
@@ -16,9 +15,7 @@ export const Education = () => {
             setScreenSize({ width: window.innerWidth, height: window.innerHeight });
         };
 
-
         window.addEventListener('resize', handleResize);
-
 
         return () => {
             window.removeEventListener('resize', handleResize);
@@ -27,14 +24,14 @@ export const Education = () => {
 
 
     return (
-        <Container fluid className='education--row pt-3 pb-3'>
+        <Container fluid className='education--row pt-3 pb-3 education--content'>
             <Container>
-                <section className='education--content'>
+                <section className=''>
                     <h3>Education</h3>
                     <Row>
                         <Col>
                             <Col xs={12} sm={8}>
-                                <p className='fw-bold mb-0'>
+                                <p className='fw-bold d-flex align-items-end mb-0'>
                                     <span className='d-none d-sm-inline'>
                                         Bachelor of Science{" "}
                                     </span>
@@ -42,6 +39,7 @@ export const Education = () => {
                                         BS{" "}
                                     </span>
                                     in Computer Science
+
                                     <span className='d-inline-block'>
                                         <RiComputerLine
                                             className='education--icon'

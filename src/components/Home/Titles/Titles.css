@@ -1,11 +1,11 @@
 .titles--content {
-    font-size: 24px;
+    font-size: 22px;
     filter: drop-shadow(0px 0px 2px #969696) !important;
 
 }
 
 .titles--div {
-    margin-left: 55px;
+    /* margin-left: 55px; */
 }
 
 .titles--btn {
@@ -58,6 +58,7 @@
 
 .title--text {
     margin-left: 32px;
+    display: inline;
 }
 
 @media (max-width: 575px) {
@@ -65,11 +66,10 @@
         font-size: 16px;
     }
 
-    .titles--div {
-        margin-left: 35px;
-    }
 
-    .left {
+
+
+    .left, .right {
         margin-top: 0px;
     }
 }

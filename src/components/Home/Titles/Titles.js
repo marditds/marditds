@@ -30,10 +30,10 @@ export const Titles = () => {
     return (
         // <Row className=' position-absolute'>
         <Row  >
-            <Col className='d-flex titles--content'>
+            <Col className='titles--content'>
                 I'm a
 
-                <div className='position-absolute titles--div'>
+                <span className=' titles--div'>
 
                     <LuChevronLeft
                         size={25}
@@ -54,7 +54,7 @@ export const Titles = () => {
                         className='titles--btn right position-absolute'
                     />
 
-                </div>
+                </span>
             </Col>
         </Row>
     )

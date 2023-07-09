@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Container, Button } from 'react-bootstrap';
 import { Titles } from './Titles/Titles';
@@ -17,11 +17,11 @@ export const Home = () => {
     }
 
     const handleIconClick = () => {
-        const resumeContent = document.getElementById('resume');
+        const skills = document.getElementById('skills');
 
-        if (resumeContent) {
+        if (skills) {
             window.scrollTo({
-                top: resumeContent.offsetTop,
+                top: skills.offsetTop,
                 behavior: 'smooth',
             });
         }
@@ -50,10 +50,10 @@ export const Home = () => {
                         <Titles />
 
                         <p className='mt-5 check--resume--txt'>
-                            Check out my resume here.
+                            Check out my skills here.
                             <Link to={{
                                 pathname: '/',
-                                hash: '#resume',
+                                hash: '#skills',
                             }}
                                 onClick={handleIconClick}
                             >

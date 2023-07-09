@@ -1,3 +1,9 @@
+.skills--content {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
 h3 {
     color: #FFFFFF;
     filter: drop-shadow(0px 0px 2px #969696);
