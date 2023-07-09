@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Container, Button } from 'react-bootstrap';
 import { Titles } from './Titles/Titles';
-import { LuChevronDown } from 'react-icons/lu';
+import { LuChevronDown, LuChevronsDown } from 'react-icons/lu';
 import { Resume } from '../Resume/Resume';
 import './Home.css';
 
@@ -16,15 +16,35 @@ export const Home = () => {
         setIsCicked((preVal) => !preVal);
     }
 
-    const handleIconClick = () => {
-        const skills = document.getElementById('skills');
 
-        if (skills) {
+
+    const handleIconClick = (targetId) => (event) => {
+        event.preventDefault();
+
+        const targetElement = document.getElementById(targetId);
+        // const skills = document.getElementById('skills');
+        // const education = document.getElementById('education');
+
+
+        if (targetElement) {
             window.scrollTo({
-                top: skills.offsetTop,
+                top: targetElement.offsetTop,
                 behavior: 'smooth',
             });
         }
+        // if (skills) {
+        //     window.scrollTo({
+        //         top: skills.offsetTop,
+        //         behavior: 'smooth',
+        //     });
+        // }
+
+        // if (education) {
+        //     window.scrollTo({
+        //         top: education.offsetTop,
+        //         behavior: 'smooth',
+        //     })
+        // }
     };
 
     return (
@@ -55,9 +75,23 @@ export const Home = () => {
                                 pathname: '/',
                                 hash: '#skills',
                             }}
-                                onClick={handleIconClick}
+                                onClick={handleIconClick('skills')}
                             >
                                 <LuChevronDown
+                                    size={24}
+                                    className='resume--icon position-absolute'
+                                />
+                            </Link>
+                        </p>
+                        <p className='mt-2 check--resume--txt'>
+                            Check out my education below that.
+                            <Link to={{
+                                pathname: '/',
+                                hash: '#education',
+                            }}
+                                onClick={handleIconClick('education')}
+                            >
+                                <LuChevronsDown
                                     size={24}
                                     className='resume--icon position-absolute'
                                 />
