@@ -1,12 +1,13 @@
-.education--row {
-    background-color: #B1CAF6;
-}
-
 .education--content {
+    background-color: #B1CAF6;
     font-size: 18px !important;
     height: 100vh;
     display: grid;
     place-items: center;
+}
+
+.education--content p {
+    /* text-indent: 1em; */
 }
 
 .degree--icon,
@@ -27,7 +28,9 @@
 /* .education--icon:first-child {} */
 
 .school--logo {
-    max-width: 160px;
+    margin-left: 1ch;
+    vertical-align: bottom;
+    max-height: 28px;
 }
 
 @media (max-width: 575px) {
