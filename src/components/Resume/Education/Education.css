@@ -16,6 +16,9 @@
     margin-left: 6px;
     /* margin-left: 1ch; */
     font-weight: 700;
+    font-size: 21px;
+    /* filter: drop-shadow(0px 0px 2px #FFFFFF); */
+    filter: drop-shadow(0px 0px 2px #edbb64);
 }
 
 .degree--icon,
@@ -45,5 +48,9 @@
 @media (max-width: 575px) {
     .education--content {
         font-size: 16px !important;
+    }
+
+    .bs--span, .as--span {
+        font-size: 19px;
     }
 }
