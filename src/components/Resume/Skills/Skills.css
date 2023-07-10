@@ -69,3 +69,9 @@ h3 {
 
     }
 }
+
+@media (max-width: 575px) {
+    .cntn--btn--row button {
+        font-size: 18px;
+    }
+}
