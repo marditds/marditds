@@ -2,9 +2,64 @@
     height: 100vh;
     display: grid;
     place-items: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h3 {
     color: #FFFFFF;
     filter: drop-shadow(0px 0px 2px #969696);
+}
+
+.cntn--btn--row button {
+    background: transparent !important;
+    border: transparent !important;
+    animation: seeEduBtn 1.5s infinite;
+    font-size: 24px;
+}
+
+@keyframes seeEduBtn {
+
+    from {
+        color: #FFFFFF;
+        filter: drop-shadow(0px 0px 2px #edbb64);
+    }
+
+    50% {
+        color: #edbb64;
+        filter: drop-shadow(0px 0px 2px #FFFFFF);
+    }
+
+    to {
+        color: #FFFFFF;
+        filter: drop-shadow(0px 0px 2px #edbb64);
+    }
+}
+
+.cntn--btn--row button>svg {
+    position: absolute;
+    animation: seeEduBtnIcon 1.5s infinite;
+}
+
+@keyframes seeEduBtnIcon {
+    from {
+        margin-top: 0px;
+        color: #FFFFFF;
+        filter: drop-shadow(0px 0px 2px #edbb64);
+
+    }
+
+    50% {
+        margin-top: 5px;
+        color: #edbb64;
+        filter: drop-shadow(0px 0px 2px #ffffff);
+
+    }
+
+    to {
+        margin-top: 0px;
+        color: #FFFFFF;
+        filter: drop-shadow(0px 0px 2px #edbb64);
+
+
+    }
 }
