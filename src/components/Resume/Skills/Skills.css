@@ -15,48 +15,54 @@ h3 {
     border: transparent !important;
     animation: seeEduBtn 1.5s infinite;
     font-size: 24px;
+    filter: drop-shadow(0px 0px 10px #edbb64);
+
 }
 
-@keyframes seeEduBtn {
+/* @keyframes seeEduBtn {
 
     from {
         color: #FFFFFF;
-        filter: drop-shadow(0px 0px 2px #edbb64);
+        filter: drop-shadow(0px 0px 1px #edbb64);
     }
 
     50% {
         color: #edbb64;
-        filter: drop-shadow(0px 0px 2px #FFFFFF);
+        filter: drop-shadow(0px 0px 1px #FFFFFF);
     }
 
     to {
         color: #FFFFFF;
-        filter: drop-shadow(0px 0px 2px #edbb64);
+        filter: drop-shadow(0px 0px 1px #edbb64);
     }
-}
+} */
 
 .cntn--btn--row button>svg {
     position: absolute;
     animation: seeEduBtnIcon 1.5s infinite;
 }
 
+.cntn--btn--row button:hover>svg {
+    color: #6495ed !important;
+}
+
 @keyframes seeEduBtnIcon {
     from {
-        margin-top: 0px;
+        margin-top: 5px;
         color: #FFFFFF;
         filter: drop-shadow(0px 0px 2px #edbb64);
 
     }
 
     50% {
-        margin-top: 5px;
+        margin-top: 10px;
         color: #edbb64;
         filter: drop-shadow(0px 0px 2px #ffffff);
 
     }
 
     to {
-        margin-top: 0px;
+        margin-top: 5px;
         color: #FFFFFF;
         filter: drop-shadow(0px 0px 2px #edbb64);
 
