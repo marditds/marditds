@@ -59,9 +59,7 @@ export const Skills = () => {
             <Container fluid className='cntn--btn--row'>
                 <Container>
                     <Row className=''>
-                        <Col className='d-none d-sm-block'></Col>
-                        <Col className=''></Col>
-                        <Col className='d-flex justify-content-center'>
+                        <Col className='text-end'>
                             <Link to={{
                                 pathname: '/',
                                 hash: '#education',
