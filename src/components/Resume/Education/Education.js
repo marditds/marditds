@@ -79,7 +79,7 @@ export const Education = () => {
                                         size={screenSize.width > 575 ? 35 : 25} />
                                 </span>
                             </span>
-                            from Glendale Community College
+                            {' '}from Glendale Community College
                             <Link to={'https://www.glendale.edu/'} target='_blank'>
                                 <Image src={gccLogo} className='school--logo' fluid />
                             </Link>.</p>
