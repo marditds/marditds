@@ -105,7 +105,7 @@ export const Home = () => {
                             }}
                                 onClick={handleIconClick('contacts')}
                             >
-                                Let's get in touch
+                                Let's get in touch!
                             </Link>
                         </p>
                     </div>
