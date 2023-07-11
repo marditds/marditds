@@ -24,9 +24,6 @@ export const Titles = () => {
         }
     }
 
-    console.log("THIS IS INDEX: " + currIdx + " " + titles[currIdx]);
-
-
     return (
         // <Row className=' position-absolute'>
         <Row  >
