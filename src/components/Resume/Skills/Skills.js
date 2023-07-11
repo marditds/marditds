@@ -12,8 +12,7 @@ export const Skills = () => {
         // event.preventDefault();
 
         const targetElement = document.getElementById(targetId);
-        // const skills = document.getElementById('skills');
-        // const education = document.getElementById('education');
+        // const skills = document.getElementById('skills'); 
 
         if (targetElement) {
             window.scrollTo({
@@ -26,14 +25,8 @@ export const Skills = () => {
         //         top: skills.offsetTop,
         //         behavior: 'smooth',
         //     });
-        // }
+        // } 
 
-        // if (education) {
-        //     window.scrollTo({
-        //         top: education.offsetTop,
-        //         behavior: 'smooth',
-        //     })
-        // }
     };
 
     return (
