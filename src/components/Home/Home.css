@@ -154,7 +154,9 @@ body {
 
     .hire--me--txt,
     .home--read--more--btn,
-    .check--resume--txt {
+    .check--resume--txt,
+    .check--education--txt,
+    .get--in--touch--txt a {
         font-size: 16px;
     }
 
