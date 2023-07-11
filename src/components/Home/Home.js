@@ -98,7 +98,16 @@ export const Home = () => {
                             </Link>
                         </p>
 
-                        <p className='get--in--touch--txt mt-5'>Let's get in touch</p>
+                        <p className='get--in--touch--txt mt-5'>
+                            <Link to={{
+                                pathname: '/',
+                                hash: '#contacts',
+                            }}
+                                onClick={handleIconClick('contacts')}
+                            >
+                                Let's get in touch
+                            </Link>
+                        </p>
                     </div>
                 </div>
             </Container>

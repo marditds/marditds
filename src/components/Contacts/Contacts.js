@@ -5,7 +5,7 @@ import { PiLinkedinLogo } from 'react-icons';
 
 export const Contacts = () => {
     return (
-        <div className='contacts--content'>
+        <div id='contacts' className='contacts--content'>
             <Container fluid className='cntcts--row'>
                 <Container>
                     Contacts
