@@ -13,11 +13,15 @@ export const Contacts = () => {
                 <Container>
                     <section>
                         <h3>Contacts</h3>
-                        <Row className='mt-5'>
+                        <Row className='mt-3'>
                             <Col>
+                                Send me a message on LinkedIn and let's connect! <br />
                                 {/* <PiLinkedinLogo size={35} /> */}
-                                <Link to={'https://www.linkedin.com/in/mardit-dersoukiassian/'}>
+                                <Link
+                                    to={'https://www.linkedin.com/in/mardit-dersoukiassian/'}
+                                    className='cntcts--link'>
                                     <SlSocialLinkedin className='cntcts--icon linkedin' size={57} />
+                                    {/* <SiLinkedin className='cntcts--icon linkedin' size={57} fill='black' /> */}
                                 </Link>
                                 {/* <SiLinkedin size={35} /> */}
                             </Col>
