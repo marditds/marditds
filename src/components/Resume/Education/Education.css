@@ -15,23 +15,32 @@
 
 .bs--span, .as--span {
     margin-left: 6px;
-    /* margin-left: 1ch; */
     font-weight: 700;
     font-size: 21px;
     /* filter: drop-shadow(0px 0px 2px #FFFFFF); */
     filter: drop-shadow(0px 0px 2px #edbb64);
+    transition: 0.3s;
 }
+
+/* .bs--span:hover,
+.bs--span:hover .degree--icon,
+.bs--span:hover .education--icon,
+.as--span:hover,
+.as--span:hover .degree--icon,
+.as--span:hover .education--icon {
+    color: yellow !important;
+    transform: scale(1.25) !important;
+} */
 
 .degree--icon,
 .education--icon {
+    transition: 0.3s;
     margin-left: 3px;
-    vertical-align: bottom !important;
 }
 
 .degree--icon {
     margin-right: 3px;
     vertical-align: text-bottom !important;
-
 }
 
 .education--icon {
@@ -40,6 +49,7 @@
 }
 
 .school--logo {
+    transition: 0.3s;
     margin-left: 1ch;
     vertical-align: text-bottom;
     max-height: 25px;

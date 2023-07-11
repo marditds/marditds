@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Image } from 'react-bootstrap';
+import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Education.css';
 import CSUNLogo from '../../../assets/csunCSLogo.png';
@@ -7,6 +7,7 @@ import gccLogo from '../../../assets/gccLogo.png';
 // import { RiComputerLine } from 'react-icons/ri';
 import { PiDesktop, PiComputerTower, PiCertificate, PiFileCode, PiMathOperations } from 'react-icons/pi';
 import { TbFileCertificate } from 'react-icons/tb';
+import { LuChevronsDown } from 'react-icons/lu';
 
 export const Education = () => {
 
@@ -25,10 +26,32 @@ export const Education = () => {
     }, []);
 
 
+    const handleIconClick = (targetId) => () => {
+        // event.preventDefault();
+
+        const targetElement = document.getElementById(targetId);
+        // const skills = document.getElementById('skills'); 
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth',
+            });
+        }
+        // if (skills) {
+        //     window.scrollTo({
+        //         top: skills.offsetTop,
+        //         behavior: 'smooth',
+        //     });
+        // } 
+
+    };
+
+
     return (
 
-        <div id='education'>
-            <Container fluid className='education--row pt-3 pb-3 education--content'>
+        <div id='education' className='education--content'>
+            <Container fluid className='education--row pt-3 pb-3'>
                 <Container>
                     <section className=''>
                         <h3>Education</h3>
@@ -123,6 +146,27 @@ export const Education = () => {
                             from Glendale Community College.
                         </p> */}
                     </section>
+                </Container>
+            </Container>
+            <Container fluid className='cntn--btn--row'>
+                <Container>
+                    <Row className=''>
+                        <Col className='text-end'>
+                            <Link to={{
+                                pathname: '/',
+                                hash: '#education',
+                            }}
+                                onClick={handleIconClick('contacts')}
+                            >
+                                <Button>Contact Me
+                                    <LuChevronsDown
+                                        size={24}
+                                    />
+                                </Button>
+                            </Link>
+
+                        </Col>
+                    </Row>
                 </Container>
             </Container>
         </div>
