@@ -13,7 +13,7 @@ export const Home = () => {
 
     const [isExpanded, setIsExpanded] = useState(false);
     const [isClicked, setIsCicked] = useState(false);
-    const [cntctIcn, setCntctIcn] = useState(<RxEnvelopeClosed className='mail' />)
+    const [cntctIcn, setCntctIcn] = useState(<RxEnvelopeClosed size={35} className='mail' />)
 
     const handleReadMore = () => {
         setIsExpanded((preVal) => !preVal);
