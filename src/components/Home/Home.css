@@ -129,7 +129,7 @@ body {
 .get--in--touch--txt a:hover .mail {
     margin-left: 20px;
     transform: scale(1.6) rotate(22deg);
-    color: cornflowerblue !important;
+    color: #6495ed !important;
 }
 
 /* .mail.open {
