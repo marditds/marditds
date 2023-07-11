@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { Container, Button } from 'react-bootstrap';
 import { Titles } from './Titles/Titles';
 import { LuChevronDown, LuChevronsDown } from 'react-icons/lu';
+import { PiEnvelopeThin, PiEnvelopeOpenThin } from 'react-icons/pi';
+import { RxEnvelopeClosed, RxEnvelopeOpen } from 'react-icons/rx';
 import { Resume } from '../Resume/Resume';
 import { Contacts } from '../Contacts/Contacts';
 import './Home.css';
@@ -11,20 +13,18 @@ export const Home = () => {
 
     const [isExpanded, setIsExpanded] = useState(false);
     const [isClicked, setIsCicked] = useState(false);
+    const [cntctIcn, setCntctIcn] = useState(<RxEnvelopeClosed />)
 
     const handleReadMore = () => {
         setIsExpanded((preVal) => !preVal);
         setIsCicked((preVal) => !preVal);
     }
 
-
     const handleIconClick = (targetId) => (event) => {
         // event.preventDefault();
 
         const targetElement = document.getElementById(targetId);
-        // const skills = document.getElementById('skills');
-        // const education = document.getElementById('education');
-
+        // const skills = document.getElementById('skills'); 
 
         if (targetElement) {
             window.scrollTo({
@@ -37,15 +37,19 @@ export const Home = () => {
         //         top: skills.offsetTop,
         //         behavior: 'smooth',
         //     });
-        // }
-
-        // if (education) {
-        //     window.scrollTo({
-        //         top: education.offsetTop,
-        //         behavior: 'smooth',
-        //     })
-        // }
+        // } 
     };
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            // setCntctIcn(preVal => (preVal.type === PiEnvelopeThin ? <PiEnvelopeOpenThin size={35} /> : <PiEnvelopeThin size={35} />));
+            setCntctIcn(preVal => (preVal.type === RxEnvelopeOpen ? <RxEnvelopeClosed size={35} /> : <RxEnvelopeOpen size={35} />));
+        }, 500);
+
+        return () => {
+            clearInterval(timer);
+        }
+    }, [])
 
     return (
         <>
@@ -104,8 +108,12 @@ export const Home = () => {
                                 hash: '#contacts',
                             }}
                                 onClick={handleIconClick('contacts')}
+                                className=' d-flex align-items-center'
                             >
                                 Let's get in touch!
+                                <span className='ms-2'>
+                                    {cntctIcn}
+                                </span>
                             </Link>
                         </p>
                     </div>

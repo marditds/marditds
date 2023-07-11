@@ -107,6 +107,11 @@ body {
     }
 }
 
+.get--in--touch--txt a {
+    transition: 0.3s;
+    text-decoration: none !important;
+}
+
 @media (max-width: 575px) {
 
     .hire--me--txt,
