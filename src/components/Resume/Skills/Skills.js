@@ -8,13 +8,12 @@ import { ToolsAndSoftware } from './ToolsAndSoftware/ToolsAndSoftware';
 
 export const Skills = () => {
 
-    const handleIconClick = (targetId) => (event) => {
+    const handleIconClick = (targetId) => () => {
         // event.preventDefault();
 
         const targetElement = document.getElementById(targetId);
         // const skills = document.getElementById('skills');
         // const education = document.getElementById('education');
-
 
         if (targetElement) {
             window.scrollTo({

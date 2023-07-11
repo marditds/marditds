@@ -4,6 +4,7 @@ import { Container, Button } from 'react-bootstrap';
 import { Titles } from './Titles/Titles';
 import { LuChevronDown, LuChevronsDown } from 'react-icons/lu';
 import { Resume } from '../Resume/Resume';
+import { Contacts } from '../Contacts/Contacts';
 import './Home.css';
 
 export const Home = () => {
@@ -15,7 +16,6 @@ export const Home = () => {
         setIsExpanded((preVal) => !preVal);
         setIsCicked((preVal) => !preVal);
     }
-
 
 
     const handleIconClick = (targetId) => (event) => {
@@ -83,7 +83,7 @@ export const Home = () => {
                                 />
                             </Link>
                         </p>
-                        <p className='mt-2 check--resume--txt'>
+                        <p className='mt-2 check--education--txt'>
                             Check out my education below that.
                             <Link to={{
                                 pathname: '/',
@@ -98,12 +98,12 @@ export const Home = () => {
                             </Link>
                         </p>
 
-
+                        <p className='get--in--touch--txt mt-5'>Let's get in touch</p>
                     </div>
                 </div>
             </Container>
             <Resume />
-
+            <Contacts />
 
         </>
     )
