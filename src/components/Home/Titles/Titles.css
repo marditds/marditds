@@ -4,9 +4,9 @@
 
 }
 
-.titles--div {
-    /* margin-left: 55px; */
-}
+/*.titles--div {
+     margin-left: 55px; 
+}*/
 
 .titles--btn {
     cursor: pointer;
@@ -65,8 +65,6 @@
     .titles--content {
         font-size: 16px;
     }
-
-
 
 
     .left, .right {

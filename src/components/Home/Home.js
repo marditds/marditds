@@ -13,7 +13,7 @@ export const Home = () => {
 
     const [isExpanded, setIsExpanded] = useState(false);
     const [isClicked, setIsCicked] = useState(false);
-    const [cntctIcn, setCntctIcn] = useState(<RxEnvelopeClosed />)
+    const [cntctIcn, setCntctIcn] = useState(<RxEnvelopeClosed className='mail' />)
 
     const handleReadMore = () => {
         setIsExpanded((preVal) => !preVal);
@@ -40,16 +40,15 @@ export const Home = () => {
         // } 
     };
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-            // setCntctIcn(preVal => (preVal.type === PiEnvelopeThin ? <PiEnvelopeOpenThin size={35} /> : <PiEnvelopeThin size={35} />));
-            setCntctIcn(preVal => (preVal.type === RxEnvelopeOpen ? <RxEnvelopeClosed size={35} /> : <RxEnvelopeOpen size={35} />));
-        }, 500);
+    // useEffect(() => {
+    //     const timer = setInterval(() => {
+    //         setCntctIcn(preVal => (preVal.type === RxEnvelopeOpen ? <RxEnvelopeClosed className='mail closed' size={35} /> : <RxEnvelopeOpen className='mail open' size={35} />));
+    //     }, 500);
 
-        return () => {
-            clearInterval(timer);
-        }
-    }, [])
+    //     return () => {
+    //         clearInterval(timer);
+    //     }
+    // }, [])
 
     return (
         <>
