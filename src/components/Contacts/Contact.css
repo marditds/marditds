@@ -6,8 +6,7 @@
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     color: white;
-    filter: drop-shadow(0px 0px 2px #969696);
-    /* background-image: url('../../assets/csunLogo.png'); */
+    /* filter: drop-shadow(0px 0px 2px #969696); */
 }
 
 .contacts--content h3 {
@@ -15,47 +14,29 @@
     filter: drop-shadow(0px 0px 2px #969696);
 }
 
-.cntcts--icon.linkedin {
+.cntcts--icon.linkedin,
+.cntcts--icon.email {
     padding: 7px;
     border-radius: 5px !important;
-    /* border: 2px solid #000000 !important; */
     background-color: cornflowerblue;
-    /* border: 2px solid cornflowerblue !important; */
     color: rgb(255, 255, 255) !important;
-    margin-top: 20px;
-    z-index: 1;
-
-}
-
-.email--link {
-    /* color: #000000; */
-}
-
-.email--icon {
-    /* color: #6495ed !important; */
-}
-
-.email--link, .email--icon {
-    /* filter: drop-shadow(0px 0px 2px #EDBB64); */
-    filter: drop-shadow(0px 0px 2px #FFFFFF);
-
+    margin-top: 15px;
+    z-index: -1;
+    height: 57px !important;
+    width: 57px !important;
     transition: 0.3s;
 }
 
-.email--link:hover, .email--icon:hover {
-    color: rgb(13, 110, 253);
-    /* filter: drop-shadow(0px 0px 2px #FFFFFF); */
-    filter: drop-shadow(0px 0px 2px #EDBB64);
-
+.cntcts--link {
+    text-decoration: none !important;
 }
 
+.cntcts--link:hover .email,
+.cntcts--link:hover .linkedin {
+    background-color: #276BE5;
+    transform: scale(1.5);
+}
 
-
-/* .cntcts--link .cntcts--icon {
-    z-index: 2;
-    color: white !important;
-    
-} */
 
 @media (max-width: 575px) {
     .contacts--content {

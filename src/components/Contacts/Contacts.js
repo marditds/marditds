@@ -27,26 +27,21 @@ export const Contacts = () => {
                 <Container>
                     <section>
                         <h3>Contacts</h3>
-                        <Row className='mt-2 d-grid'>
-                            <Col>
-                                You can email me at
-                                <Link className='ms-2 email--link' to={`mailto:${email}`}>
+                        <Row className='mt-2 '>
+                            <Col className='d-flex justify-content-center'>
+                                <Link className='d-grid cntcts--link' to={`mailto:${email}`}>
+                                    <RxEnvelopeClosed className='mx-auto cntcts--icon email' size={widthSize.width > 575 ? 50 : 30} />
                                     marditds@gmail.com
-                                    <RxEnvelopeClosed className='email--icon ms-2' size={widthSize.width > 575 ? 35 : 30} />
                                 </Link>
                             </Col>
-                            <Col>
-                                Send me a message on LinkedIn and let's connect! <br />
-                                {/* <PiLinkedinLogo size={35} /> */}
+                            <Col className='d-flex justify-content-center'>
                                 <Link
                                     to={'https://www.linkedin.com/in/mardit-dersoukiassian/'}
-                                    className='cntcts--link'>
-                                    <SlSocialLinkedin className='cntcts--icon linkedin' size={57} />
-                                    {/* <SiLinkedin className='cntcts--icon linkedin' size={57} fill='black' /> */}
+                                    className='d-grid cntcts--link'>
+                                    <SlSocialLinkedin className='mx-auto cntcts--icon linkedin' size={57} />
+                                    /mardit-dersoukiassian
                                 </Link>
-                                {/* <SiLinkedin size={35} /> */}
                             </Col>
-
                         </Row>
                     </section>
                 </Container>
