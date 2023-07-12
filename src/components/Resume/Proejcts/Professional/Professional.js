@@ -14,35 +14,31 @@ export const Professional = () => {
 
     return (
         <Row>
-            <Row>
-                {
-                    profData.map((item, index) => {
-                        return (
-                            <>
-                                <Col
-                                    key={index}
-                                    className={`${item.id}--col`}
+            {
+                profData.map((item, index) => {
+                    return (
+                        <Row key={index}>
+                            <Col
+                                className={`${item.id}--col`}
+                            >
+                                <Link
+                                    to={item.url}
+                                    target='_blank'
+                                    className={`${item.id}--link`}
                                 >
-                                    <Link
-                                        to={item.url}
-                                        target='_blank'
-                                        className={`${item.id}--link`}
-                                    >
-                                        <Image
-                                            src={item.avatar}
-                                            className={`${item.id}--logo`}
-                                            fluid
-                                        />
-                                        <p>{item.title}</p>
-                                    </Link>
-                                </Col>
-                                <Col></Col>
-                            </>
-                        )
-                    })
-                }
-
-            </Row>
+                                    <Image
+                                        src={item.avatar}
+                                        className={`${item.id}--logo`}
+                                        fluid
+                                    />
+                                    <p>{item.title}</p>
+                                </Link>
+                            </Col>
+                            <Col></Col>
+                        </Row>
+                    )
+                })
+            }
         </Row>
     )
 }
