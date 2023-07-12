@@ -8,9 +8,9 @@ export const Professional = () => {
 
     const [profData, setProfData] = useState(professionalData);
 
-    useEffect(() => {
-        setProfData(preVal => preVal)
-    }, [])
+    // useEffect(() => {
+    //     setProfData(preVal => preVal)
+    // })
 
     return (
         <Row>
