@@ -1,3 +1,37 @@
+.bitbeat--col {
+    display: grid;
+    place-items: center;
+}
+
+.bitbeat--link {
+    display: grid;
+    place-items: center;
+    place-items: center;
+    text-decoration: none !important;
+    color: #000000;
+    /* filter: drop-shadow(0px 0px 2px #FFFFFF) !important; */
+    max-width: fit-content;
+}
+
 .bitbeat--logo {
-    max-height: 75px;
+    max-height: 75px !important;
+    transition: 0.3s !important;
+    filter: drop-shadow(0px 0px 0px transparent) !important;
+}
+
+.bitbeat--link p {
+    margin-bottom: 0;
+    filter: drop-shadow(0px 0px 5px #FFFFFF) !important;
+    transition: 0.3s
+}
+
+
+.bitbeat--link:hover .bitbeat--logo {
+    transform: scale(1.2);
+}
+
+.bitbeat--link:hover .bitbeat--logo,
+.bitbeat--link:hover p {
+    filter: drop-shadow(0px 0px 5px #EDBB64) !important;
+
 }
