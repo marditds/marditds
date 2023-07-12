@@ -25,6 +25,8 @@
     height: 57px !important;
     width: 57px !important;
     transition: 0.3s;
+    /* filter: drop-shadow(0px 0px 5px #969696) !important; */
+
 }
 
 .cntcts--link {
@@ -32,20 +34,20 @@
     color: #000000;
     font-weight: 400;
     text-decoration: none !important;
-    filter: drop-shadow(0px 0px 2px #ffffff);
-    /* filter: drop-shadow(0px 0px 2px #969696); */
+    filter: drop-shadow(0px 0px 2px #969696);
+    /* filter: drop-shadow(0px 0px 3px #ffffff); */
     transition: 0.3s;
 }
 
 .cntcts--link:hover {
-    filter: drop-shadow(0px 0px 5px #edbb64) !important;
+    filter: drop-shadow(0px 0px 8px #edbb64) !important;
 
 }
 
 .cntcts--link:hover .email,
 .cntcts--link:hover .linkedin {
     /* background-color: #276BE5; */
-    transform: scale(1.5);
+    transform: scale(1.25);
     white-space: nowrap !important;
 }
 
