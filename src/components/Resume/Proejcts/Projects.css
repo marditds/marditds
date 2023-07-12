@@ -1,0 +1,7 @@
+.prjcts--content {
+    height: 100vh;
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    font-family: 'Quicksand', sans-serif;
+}

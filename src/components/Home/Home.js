@@ -101,6 +101,21 @@ export const Home = () => {
                             </Link>
                         </p>
 
+                        <p className='mt-2 check--education--txt'>
+                            View my projects
+                            <Link to={{
+                                pathname: '/',
+                                hash: '#projects',
+                            }}
+                                onClick={handleIconClick('projects')}
+                            >
+                                <LuChevronsDown
+                                    size={24}
+                                    className='resume--icon position-absolute'
+                                />
+                            </Link>
+                        </p>
+
                         <p className='get--in--touch--txt mt-5'>
                             <Link to={{
                                 pathname: '/',

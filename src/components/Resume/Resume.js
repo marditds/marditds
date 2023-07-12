@@ -2,7 +2,8 @@ import React from 'react';
 import './Resume.css';
 import { Skills } from './Skills/Skills';
 import { Education } from './Education/Education';
-import { Experience } from './Experience/Experience';
+import { Projects } from './Proejcts/Projects';
+
 
 export const Resume = () => {
     return (
@@ -11,7 +12,7 @@ export const Resume = () => {
 
             <Skills />
             <Education />
-            {/* <Experience /> */}
+            <Projects />
 
         </>
     )
