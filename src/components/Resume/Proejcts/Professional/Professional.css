@@ -1,0 +1,8 @@
+.chosn--link {
+    display: grid;
+    place-items: center;
+}
+
+.chosn--logo {
+    max-height: 75px !important;
+}

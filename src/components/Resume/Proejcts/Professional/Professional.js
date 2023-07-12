@@ -12,19 +12,33 @@ export const Professional = () => {
         setProfData(preVal => preVal)
     }, [])
 
-    console.log(profData);
-
     return (
         <Row>
             <Row>
                 {
                     profData.map((item, index) => {
-                        <Col key={index}>
-                            <Link to={item.url} target='_blank'>
-                                {/* <Image src={item.avatar} fluid /> */}
-                                <p>{item.title}</p>
-                            </Link>
-                        </Col>
+                        return (
+                            <>
+                                <Col
+                                    key={index}
+                                    className={`${item.id}--col`}
+                                >
+                                    <Link
+                                        to={item.url}
+                                        target='_blank'
+                                        className={`${item.id}--link`}
+                                    >
+                                        <Image
+                                            src={item.avatar}
+                                            className={`${item.id}--logo`}
+                                            fluid
+                                        />
+                                        <p>{item.title}</p>
+                                    </Link>
+                                </Col>
+                                <Col></Col>
+                            </>
+                        )
                     })
                 }
 
