@@ -28,13 +28,25 @@
 }
 
 .cntcts--link {
+    /* color: #ffffff; */
+    color: #000000;
+    font-weight: 400;
     text-decoration: none !important;
+    filter: drop-shadow(0px 0px 2px #ffffff);
+    /* filter: drop-shadow(0px 0px 2px #969696); */
+    transition: 0.3s;
+}
+
+.cntcts--link:hover {
+    filter: drop-shadow(0px 0px 5px #edbb64) !important;
+
 }
 
 .cntcts--link:hover .email,
 .cntcts--link:hover .linkedin {
-    background-color: #276BE5;
+    /* background-color: #276BE5; */
     transform: scale(1.5);
+    white-space: nowrap !important;
 }
 
 
