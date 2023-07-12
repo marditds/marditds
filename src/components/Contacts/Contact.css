@@ -27,6 +27,28 @@
 
 }
 
+.email--link {
+    /* color: #000000; */
+}
+
+.email--icon {
+    /* color: #6495ed !important; */
+}
+
+.email--link, .email--icon {
+    /* filter: drop-shadow(0px 0px 2px #EDBB64); */
+    filter: drop-shadow(0px 0px 2px #FFFFFF);
+
+    transition: 0.3s;
+}
+
+.email--link:hover, .email--icon:hover {
+    color: rgb(13, 110, 253);
+    /* filter: drop-shadow(0px 0px 2px #FFFFFF); */
+    filter: drop-shadow(0px 0px 2px #EDBB64);
+
+}
+
 
 
 /* .cntcts--link .cntcts--icon {
