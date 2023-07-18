@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { Row, Col, Image } from 'react-bootstrap';
-import './Academic.css';
-import { academicData } from '../../../../data/academicData';
+import './Personal.css';
+import { personalData } from '../../../../data/personalData';
 
-export const Academic = () => {
+export const Personal = () => {
 
-    const [acadData, setAcadData] = useState(academicData);
+    const [personData, setPersonData] = useState(personalData);
 
     return (
         // <Row>
-        <Col className='mt-4 mt-md-0'>
+        <Col className='mt-4 mt-lg-0'>
             {
-                acadData.map((item, index) => {
+                personData.map((item, index) => {
                     return (
                         <Row key={index}>
                             <Col
@@ -37,6 +37,6 @@ export const Academic = () => {
                 })
             }
         </Col>
-        // </Row>
+        // {/* </Row> */}
     )
 }

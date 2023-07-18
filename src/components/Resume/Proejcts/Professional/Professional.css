@@ -18,7 +18,7 @@
     transition: 0.3s !important;
 }
 
-.chosn--link p {
+.chosn--link h5 {
     margin-bottom: 0;
     filter: drop-shadow(0px 0px 2px #FFFFFF) !important;
     transition: 0.3s
@@ -30,7 +30,10 @@
 }
 
 .chosn--link:hover .chosn--logo,
-.chosn--link:hover p {
+.chosn--link:hover h5 {
     filter: drop-shadow(0px 0px 5px #EDBB64) !important;
+}
 
+.my--role--chosn--p {
+    color: #000000;
 }

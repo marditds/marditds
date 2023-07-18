@@ -154,11 +154,11 @@ export const Education = () => {
                         <Col className='text-end'>
                             <Link to={{
                                 pathname: '/',
-                                hash: '#education',
+                                hash: '#projects',
                             }}
-                                onClick={handleIconClick('contacts')}
+                                onClick={handleIconClick('projects')}
                             >
-                                <Button>Contact Me
+                                <Button>My Projects
                                     <LuChevronsDown
                                         size={24}
                                     />

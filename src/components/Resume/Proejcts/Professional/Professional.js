@@ -8,12 +8,13 @@ export const Professional = () => {
 
     const [profData, setProfData] = useState(professionalData);
 
-    // useEffect(() => {
-    //     setProfData(preVal => preVal)
-    // })
+    useEffect(() => {
+        setProfData(preVal => preVal)
+    })
 
     return (
-        <Row>
+        // <Row>
+        <Col>
             {
                 profData.map((item, index) => {
                     return (
@@ -31,14 +32,16 @@ export const Professional = () => {
                                         className={`${item.id}--logo`}
                                         fluid
                                     />
-                                    <p>{item.title}</p>
+                                    <h5 className='mb-0 text-center'>{item.title}</h5>
+                                    <p>{item.desc}</p>
+                                    <p className={`my--role--${item.id}--p`}>{item.myrole}</p>
                                 </Link>
                             </Col>
-                            <Col></Col>
                         </Row>
                     )
                 })
             }
-        </Row>
+        </Col>
+        // {/* </Row> */ }
     )
 }
