@@ -33,7 +33,7 @@ export const Professional = () => {
                                         fluid
                                     />
                                     <h5 className='mb-0 text-center'>{item.title}</h5>
-                                    <p>{item.desc}</p>
+                                    <h6>{item.desc}</h6>
                                     <p className={`my--role--${item.id}--p`}>{item.myrole}</p>
                                 </Link>
                             </Col>
