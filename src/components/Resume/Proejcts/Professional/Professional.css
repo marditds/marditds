@@ -15,6 +15,7 @@
 
 .chosn--logo {
     max-height: 75px !important;
+    filter: sepia(100%) hue-rotate(180deg) saturate(300%);
     transition: 0.3s !important;
 }
 
@@ -28,6 +29,7 @@
 
 .chosn--link:hover .chosn--logo {
     transform: scale(1.2);
+    filter: none !important;
 }
 
 .chosn--link:hover .chosn--logo,
