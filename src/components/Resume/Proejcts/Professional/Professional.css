@@ -15,8 +15,21 @@
 
 .chosn--logo {
     max-height: 75px !important;
-    filter: sepia(100%) hue-rotate(180deg) saturate(300%);
+    /* filter: sepia(100%) hue-rotate(180deg) saturate(300%); */
     transition: 0.3s !important;
+}
+
+.chosn--link {
+    color: #000000;
+    text-decoration: underline !important;
+    font-weight: bolder;
+    /* filter: drop-shadow(0px 0px 2px #000000) !important; */
+    transition: 0.3s;
+}
+
+.chosn--link:hover {
+    color: #EDBB64;
+    filter: drop-shadow(0px 0px 2px #FFFFFF) !important;
 }
 
 .chosn--link h5 {

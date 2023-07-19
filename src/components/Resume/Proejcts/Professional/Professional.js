@@ -15,7 +15,7 @@ export const Professional = () => {
 
     const ReadMorePar = ({ text }) => {
 
-        const [open, setOpen] = useState(false);
+        const [open, setOpen] = useState(true);
 
         const splitSentences = text.split(/[.!?]/);
         const twoSentences = splitSentences.slice(0, 2).join('. ');
@@ -54,7 +54,7 @@ export const Professional = () => {
                                     className={`${item.id}--logo`}
                                     fluid
                                 />
-                                <h5 className='mb-0 text-center'>{item.title}</h5>
+                                <h5 className='mb-0 text-center fw-bolder'>{item.title}</h5>
                                 <h6>{item.desc}</h6>
                                 <section className={`my--role--${item.id}--p`}>
                                     {item.myrole.length > 150 ?
@@ -65,7 +65,7 @@ export const Professional = () => {
                                 <Link
                                     to={item.url}
                                     target='_blank'
-                                    className={`${item.id}--link d-flex`}
+                                    className={`${item.id}--link d-flex text-decoration-underline mt-3`}
                                 >
                                     View Project<FiExternalLink className='ms-1' />
                                 </Link>
