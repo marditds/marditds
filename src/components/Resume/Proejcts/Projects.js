@@ -31,8 +31,8 @@ export const Projects = () => {
                     <h3>My Projects</h3>
                     <Row xs={1} md={2} lg={3} className='mt-5'>
                         <Professional />
-                        <Academic />
-                        <Personal />
+                        {/* <Academic /> */}
+                        {/* <Personal /> */}
                     </Row>
                 </Container>
             </Container>

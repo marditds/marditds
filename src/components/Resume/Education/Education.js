@@ -158,7 +158,7 @@ export const Education = () => {
                             }}
                                 onClick={handleIconClick('projects')}
                             >
-                                <Button>My Projects
+                                <Button>See My Projects
                                     <LuChevronsDown
                                         size={24}
                                     />
