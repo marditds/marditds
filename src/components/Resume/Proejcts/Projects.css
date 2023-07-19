@@ -9,6 +9,7 @@
 .read--more--btn {
     background-color: transparent !important;
     color: #ffffff !important;
+    filter: drop-shadow(0px 0px 2px #969696);
     border: 0 !important;
     padding: 0;
     transition: 0.3s;
@@ -16,5 +17,8 @@
 
 .read--more--btn:hover {
     filter: drop-shadow(0px 0px 5px #EDBB64) !important;
+}
 
+.read--more--btn.clicked {
+    filter: drop-shadow(0px 0px 5px #EDBB64) !important;
 }

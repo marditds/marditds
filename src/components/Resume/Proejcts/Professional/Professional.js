@@ -4,6 +4,8 @@ import { Row, Col, Image, Collapse, Button } from 'react-bootstrap';
 import './Professional.css';
 import { professionalData } from '../../../../data/professionalData';
 import { FiExternalLink } from 'react-icons/fi';
+import { BsCaretDown, BsCaretUp, BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
+import { PiCaretCircleDoubleDownLight } from 'react-icons/pi';
 
 export const Professional = () => {
 
@@ -22,7 +24,7 @@ export const Professional = () => {
         const restOfPar = splitSentences.slice(2, splitSentences.length).join('.');
         return (
             <>
-                {twoSentences + '.'}
+                {twoSentences}{open ? '...' : '.'}
 
                 <span className={open ? 'd-none' : 'd-inline'}>
                     {restOfPar}
@@ -30,9 +32,11 @@ export const Professional = () => {
                 <br />
                 <Button
                     onClick={() => setOpen(!open)}
-                    className='read--more--btn'
+                    className={`read--more--btn ${open ? '' : 'clicked'}`}
                 >
                     Read {open ? 'More' : 'Less'}
+                    {open ? <BsCaretDown className='ms-1' size={20} /> : <BsCaretUp className='ms-1' size={20} />}
+                    {/* {open ? <BsFillCaretDownFill /> : <BsFillCaretUpFill />} */}
                 </Button>
             </>
         )
@@ -54,7 +58,7 @@ export const Professional = () => {
                                     className={`${item.id}--logo`}
                                     fluid
                                 />
-                                <h5 className='mb-0 text-center fw-bolder'>{item.title}</h5>
+                                <h5 className='mb-1 text-center fw-bolder'>{item.title}</h5>
                                 <h6>{item.desc}</h6>
                                 <section className={`my--role--${item.id}--p`}>
                                     {item.myrole.length > 150 ?
