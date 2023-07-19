@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col, Image, Collapse, Button } from 'react-bootstrap';
+import { Row, Col, Image, Button } from 'react-bootstrap';
 import './Professional.css';
 import { professionalData } from '../../../../data/professionalData';
 import { FiExternalLink } from 'react-icons/fi';
-import { BsCaretDown, BsCaretUp, BsFillCaretDownFill, BsFillCaretUpFill } from 'react-icons/bs';
-import { PiCaretCircleDoubleDownLight } from 'react-icons/pi';
+import { BsCaretDown, BsCaretUp } from 'react-icons/bs';
 
 export const Professional = () => {
 
@@ -55,7 +54,7 @@ export const Professional = () => {
 
                                 <Image
                                     src={item.avatar}
-                                    className={`${item.id}--logo`}
+                                    className={`${item.id}--logo mb-2`}
                                     fluid
                                 />
                                 <h5 className='mb-1 text-center fw-bolder'>{item.title}</h5>

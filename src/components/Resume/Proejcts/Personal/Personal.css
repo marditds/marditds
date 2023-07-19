@@ -4,20 +4,21 @@
 }
 
 .betgoalpro--link {
-    display: grid;
-    place-items: center;
-    place-items: center;
-    text-decoration: none !important;
     color: #000000;
-    /* filter: drop-shadow(0px 0px 2px #FFFFFF) !important; */
-    max-width: fit-content;
+    text-decoration: underline !important;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+.betgoalpro--link:hover {
+    color: #EDBB64;
+    filter: drop-shadow(0px 0px 2px #FFFFFF) !important;
 }
 
 .betgoalpro--logo {
     max-height: 75px !important;
     transition: 0.3s !important;
-    filter: sepia(100%) hue-rotate(180deg) saturate(100%);
-
+    /* filter: sepia(100%) hue-rotate(180deg) saturate(100%); */
     /* filter: drop-shadow(0px 0px 0px transparent) !important; */
 }
 

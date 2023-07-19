@@ -3,37 +3,39 @@ import { Link } from 'react-router-dom'
 import { Row, Col, Image, Collapse, Button } from 'react-bootstrap';
 import './Academic.css';
 import { academicData } from '../../../../data/academicData';
+import { FiExternalLink } from 'react-icons/fi';
+import { BsCaretDown, BsCaretUp } from 'react-icons/bs';
 
 export const Academic = () => {
 
     const [acadData, setAcadData] = useState(academicData);
 
     useEffect(() => {
-        setAcadData(preVal => preVal);
+        setAcadData(preVal => preVal)
     })
 
     const ReadMorePar = ({ text }) => {
 
-        const [open, setOpen] = useState(false);
+        const [open, setOpen] = useState(true);
 
+        const splitSentences = text.split(/[.!?]/);
+        const twoSentences = splitSentences.slice(0, 2).join('. ');
+        const restOfPar = splitSentences.slice(2, splitSentences.length).join('.');
         return (
             <>
-                {text.substring(0, 150)}
+                {twoSentences}{open ? '...' : '.'}
 
-                <div style={{ display: 'inline-block', textIndent: 0 }}>
-                    <Collapse in={open}>
-                        <div id="example-collapse-text">
-                            {/* <span style={{ display: 'inline-block' }}> */}
-                            {text.substring(150, text.length)}
-                            {/* </span> */}
-                        </div>
-                    </Collapse>
-                </div>
+                <span className={open ? 'd-none' : 'd-inline'}>
+                    {restOfPar}
+                </span>
+                <br />
                 <Button
                     onClick={() => setOpen(!open)}
-                    aria-expanded={open}
+                    className={`read--more--btn ${open ? '' : 'clicked'}`}
                 >
-                    click
+                    Read {open ? 'More' : 'Less'}
+                    {open ? <BsCaretDown className='ms-1' size={20} /> : <BsCaretUp className='ms-1' size={20} />}
+                    {/* {open ? <BsFillCaretDownFill /> : <BsFillCaretUpFill />} */}
                 </Button>
             </>
         )
@@ -41,7 +43,7 @@ export const Academic = () => {
 
     return (
         // <Row>
-        <Col className='mt-4 mt-md-0'>
+        <Col>
             {
                 acadData.map((item, index) => {
                     return (
@@ -52,10 +54,10 @@ export const Academic = () => {
 
                                 <Image
                                     src={item.avatar}
-                                    className={`${item.id}--logo`}
+                                    className={`${item.id}--logo mb-2`}
                                     fluid
                                 />
-                                <h5 className='mb-0 text-center'>{item.title}</h5>
+                                <h5 className='mb-1 text-center fw-bolder'>{item.title}</h5>
                                 <h6>{item.desc}</h6>
                                 <section className={`my--role--${item.id}--p`}>
                                     {item.myrole.length > 150 ?
@@ -66,9 +68,9 @@ export const Academic = () => {
                                 <Link
                                     to={item.url}
                                     target='_blank'
-                                    className={`${item.id}--link`}
+                                    className={`${item.id}--link d-flex text-decoration-underline mt-3`}
                                 >
-                                    View Project
+                                    View Project<FiExternalLink className='ms-1' />
                                 </Link>
                             </Col>
                         </Row>
@@ -76,6 +78,6 @@ export const Academic = () => {
                 })
             }
         </Col>
-        // </Row>
+        // {/* </Row> */ }
     )
 }
