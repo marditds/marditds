@@ -45,6 +45,7 @@
     color: #000000;
     text-align: justify;
     text-indent: 1em;
+    line-height: 175% !important;
     transition: 0.3s;
 }
 
