@@ -1,6 +1,7 @@
 .chosn--col {
     display: grid;
     place-items: center;
+    flex-grow: 1;
 }
 
 .chosn--link {

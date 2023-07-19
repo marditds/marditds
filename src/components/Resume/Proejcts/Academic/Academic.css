@@ -1,6 +1,8 @@
 .bitbeat--col {
     display: grid;
     place-items: center;
+    flex-grow: 1;
+
 }
 
 .bitbeat--link {

@@ -1,12 +1,26 @@
+.prject--parent--col {
+    /* display: flex;
+    justify-content: center; */
+    /* flex-grow: 1; */
+    height: auto !important;
+
+}
+
 .betgoalpro--col {
     display: grid;
     place-items: center;
+    /* height: auto !important; */
+    /* height: 100% !important; */
+    /* position: relative; */
 }
+
 
 .betgoalpro--link {
     color: #000000;
     text-decoration: underline !important;
     font-weight: bolder;
+    /* bottom: 0 !important; */
+    /* margin-bottom: 0 !important; */
     transition: 0.3s;
 }
 

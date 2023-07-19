@@ -43,11 +43,12 @@ export const Personal = () => {
 
     return (
         // <Row>
-        <Col>
+        <Col className='prject--parent--col'>
             {
                 prsonData.map((item, index) => {
                     return (
                         <Row key={index}>
+
                             <Col
                                 className={`${item.id}--col`}
                             >
@@ -68,11 +69,12 @@ export const Personal = () => {
                                 <Link
                                     to={item.url}
                                     target='_blank'
-                                    className={`${item.id}--link d-flex text-decoration-underline mt-3`}
+                                    className={`${item.id}--link d-flex text-decoration-underline`}
                                 >
                                     View Project<FiExternalLink className='ms-1' />
                                 </Link>
                             </Col>
+
                         </Row>
                     )
                 })
