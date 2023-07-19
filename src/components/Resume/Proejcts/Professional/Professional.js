@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Row, Col, Image, Collapse, Button } from 'react-bootstrap';
 import './Professional.css';
 import { professionalData } from '../../../../data/professionalData';
+import { FiExternalLink } from 'react-icons/fi';
 
 export const Professional = () => {
 
@@ -21,14 +22,10 @@ export const Professional = () => {
         const restOfPar = splitSentences.slice(2, splitSentences.length).join('.');
         return (
             <>
-                {/* {text.substring(0, 149) + '...'} */}
                 {twoSentences + '.'}
 
                 <span className={open ? 'd-none' : 'd-inline'}>
                     {restOfPar}
-                    {/* <span style={{ display: 'inline-block' }}> */}
-                    {/* {text.substring(150, text.length)} */}
-                    {/* </span> */}
                 </span>
                 <br />
                 <Button
@@ -68,9 +65,9 @@ export const Professional = () => {
                                 <Link
                                     to={item.url}
                                     target='_blank'
-                                    className={`${item.id}--link`}
+                                    className={`${item.id}--link d-flex`}
                                 >
-                                    View Project
+                                    View Project<FiExternalLink className='ms-1' />
                                 </Link>
                             </Col>
                         </Row>
