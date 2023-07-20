@@ -6,5 +6,6 @@ export const personalData = [{
     avatar: logos('./bgpLogo.png'),
     url: 'https://betgoalpro.netlify.app',
     desc: 'Betting web app for Football matches',
-    myrole: 'Coming Soon'
+    myrole: 'Coming Soon',
+    github: 'https://github.com/marditds/betgoalproui'
 }]
