@@ -7,5 +7,7 @@ export const personalData = [{
     url: 'https://betgoalpro.netlify.app',
     desc: 'Betting web app for Football matches',
     myrole: 'Coming Soon',
-    github: 'https://github.com/marditds/betgoalproui'
+    github: 'https://github.com/marditds/betgoalproui',
+    type: 'Personal'
+
 }]
