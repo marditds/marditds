@@ -8,6 +8,6 @@ export const personalData = [{
     desc: 'Betting web app for Football matches',
     myrole: 'Coming Soon',
     github: 'https://github.com/marditds/betgoalproui',
-    type: 'Personal'
-
+    type: 'Personal',
+    category: 'personal'
 }]

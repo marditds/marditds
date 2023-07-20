@@ -85,7 +85,7 @@ export const Project = ({ data }) => {
                                         <Link
                                             to={item.github}
                                             target='_blank'
-                                            className={`${item.id}--link`}
+                                            className={item.category === 'professional' ? 'd-none' : `${item.id}--link`}
                                         >
                                             <AiOutlineGithub size={25} />
                                         </Link>
