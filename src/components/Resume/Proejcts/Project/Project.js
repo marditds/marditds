@@ -14,8 +14,6 @@ export const Project = ({ data }) => {
         setProjectData(preVal => preVal)
     })
 
-    console.log("THIS IS PATHNAME: ", pathname);
-
     // const ReadMorePar = ({ text }) => {
 
     //     const [open, setOpen] = useState(true);
