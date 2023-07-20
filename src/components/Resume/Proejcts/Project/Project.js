@@ -57,7 +57,7 @@ export const Project = ({ data }) => {
 
                                 <Image
                                     src={item.avatar}
-                                    className={`${item.id}--logo mb-2`}
+                                    className={`${item.id}--logo mb-3`}
                                     fluid
                                 />
 
@@ -72,7 +72,7 @@ export const Project = ({ data }) => {
                                         :
                                         item.myrole}
                                 </section> */}
-                                <section className='w-100'>
+                                <section className='w-100 mt-1'>
                                     <article className='d-flex justify-content-evenly w-100'>
                                         <Link
                                             to={item.url}
