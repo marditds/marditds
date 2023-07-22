@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom'
 import { Row, Col, Image, Button } from 'react-bootstrap';
 import { FiExternalLink } from 'react-icons/fi';
-import { BsCaretDown, BsCaretUp } from 'react-icons/bs';
+// import { BsCaretDown, BsCaretUp } from 'react-icons/bs';
 import { AiOutlineGithub } from 'react-icons/ai';
+import './Project.css';
 
 export const Project = ({ data }) => {
 
@@ -43,14 +44,14 @@ export const Project = ({ data }) => {
 
     return (
         // <Row>
-        <Col className='prject--parent--col'>
+        <Col className='project--parent--col'>
             {
                 projectData.map((item, index) => {
                     return (
                         <Row key={index}>
 
                             <Col
-                                className={`${item.id}--col`}
+                                className={`${item.id}--col project--col`}
                             >
 
                                 <Image

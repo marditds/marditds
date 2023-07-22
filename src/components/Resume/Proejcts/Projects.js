@@ -29,7 +29,7 @@ export const Projects = () => {
             <Container fluid>
                 <Container>
                     <h3>My Projects</h3>
-                    <Row xs={1} md={2} lg={3} className='mt-5'>
+                    <Row xs={1} md={2} lg={3} className='mt-2 mt-lg-5'>
                         <Professional />
                         <Academic />
                         <Personal />

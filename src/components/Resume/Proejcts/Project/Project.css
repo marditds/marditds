@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+
+    /* .project--parent--col:first-child, */
+    .project--parent--col:nth-child(-n+2) {
+        margin-top: 0 !important;
+    }
+
+    .project--parent--col {
+        margin-top: 40px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .project--parent--col:nth-child(2),
+    .project--parent--col {
+        margin-top: 43px !important;
+    }
+}

@@ -52,7 +52,7 @@ export const Home = () => {
 
     return (
         <>
-            <Container fluid className=''>
+            <Container fluid className='home--mother--container'>
                 <div className='home--content'>
                     <div>
                         <div className='d-flex align-items-center mb-2'>

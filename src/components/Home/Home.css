@@ -5,6 +5,15 @@ body {
     background-color: #B1CAF6 !important;
 }
 
+.home--mother--container {
+    background-image: url('../../assets/faceLeft.png');
+    background-position: center left;
+    background-size: 30vh;
+    background-repeat: no-repeat;
+    background-color: #B1CAF6;
+
+}
+
 .home--content {
     height: 100vh;
     flex-grow: 1;
@@ -12,12 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
-    background-color: #B1CAF6;
     color: white;
-    background-image: url('../../assets/faceLeft.png');
-    background-position: center left;
-    background-size: 30vh;
-    background-repeat: no-repeat;
 }
 
 .hire--me--txt {
