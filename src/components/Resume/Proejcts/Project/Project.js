@@ -64,21 +64,23 @@ export const Project = ({ data }) => {
                                         <h5 className='mb-1 text-center fw-bolder'>{item.title}</h5>
                                         <h6>{item.desc}</h6>
                                         <h6>Project type: <strong>{item.type}</strong></h6>
-                                        <Link
-                                            to={item.url}
-                                            target='_blank'
-                                            className={`${item.id}--link d-flex align-items-center mx-auto   text-decoration-underline`}
-                                        >
-                                            {/* View Project */}
-                                            <FiExternalLink size={22} className='ms-1' />
-                                        </Link>
-                                        <Link
-                                            to={item.github}
-                                            target='_blank'
-                                            className={item.category === 'professional' ? 'd-none' : `${item.id}--link`}
-                                        >
-                                            <AiOutlineGithub size={25} />
-                                        </Link>
+                                        <div className='d-flex justify-content-evenly align-items-center mx-auto'>
+                                            <Link
+                                                to={item.url}
+                                                target='_blank'
+                                                className={`${item.id}--link    text-decoration-underline`}
+                                            >
+                                                {/* View Project */}
+                                                <FiExternalLink size={22} className='ms-1' />
+                                            </Link>
+                                            <Link
+                                                to={item.github}
+                                                target='_blank'
+                                                className={item.category === 'professional' ? 'd-none' : `${item.id}--link    `}
+                                            >
+                                                <AiOutlineGithub size={25} />
+                                            </Link>
+                                        </div>
                                     </section>
                                 </div>
                                 {/* <section className={`my--role--${item.id}--p`}>
