@@ -54,34 +54,38 @@ export const Project = ({ data }) => {
                                 className={`${item.id}--col project--col`}
                             >
                                 <div className='d-flex justify-content-evenly d-sm-grid'>
-                                    <Image
-                                        src={item.avatar}
-                                        className={`${item.id}--logo mb-3`}
-                                        fluid
-                                    />
-
-                                    <section>
-                                        <h5 className='mb-1 text-center fw-bolder'>{item.title}</h5>
-                                        <h6>{item.desc}</h6>
-                                        <h6>Project type: <strong>{item.type}</strong></h6>
-                                        <div className='d-flex justify-content-evenly align-items-center mx-auto'>
-                                            <Link
-                                                to={item.url}
-                                                target='_blank'
-                                                className={`${item.id}--link    text-decoration-underline`}
-                                            >
-                                                {/* View Project */}
-                                                <FiExternalLink size={22} className='ms-1' />
-                                            </Link>
-                                            <Link
-                                                to={item.github}
-                                                target='_blank'
-                                                className={item.category === 'professional' ? 'd-none' : `${item.id}--link    `}
-                                            >
-                                                <AiOutlineGithub size={25} />
-                                            </Link>
-                                        </div>
-                                    </section>
+                                    <Col xs={3} sm={6} className={`${item.id}--logo--col d-flex justify-content-center
+                                    align-items-start`}>
+                                        <Image
+                                            src={item.avatar}
+                                            className={`${item.id}--logo mb-sm-3`}
+                                            fluid
+                                        />
+                                    </Col>
+                                    <Col>
+                                        <section>
+                                            <h5 className='mb-1 text-start text-sm-center fw-bolder'>{item.title}</h5>
+                                            <h6>{item.desc}</h6>
+                                            <h6>Project type: <strong>{item.type}</strong></h6>
+                                            <div className='d-flex justify-content-evenly align-items-center mx-auto'>
+                                                <Link
+                                                    to={item.url}
+                                                    target='_blank'
+                                                    className={`${item.id}--link    text-decoration-underline`}
+                                                >
+                                                    {/* View Project */}
+                                                    <FiExternalLink size={22} className='ms-1' />
+                                                </Link>
+                                                <Link
+                                                    to={item.github}
+                                                    target='_blank'
+                                                    className={item.category === 'professional' ? 'd-none' : `${item.id}--link    `}
+                                                >
+                                                    <AiOutlineGithub size={25} />
+                                                </Link>
+                                            </div>
+                                        </section>
+                                    </Col>
                                 </div>
                                 {/* <section className={`my--role--${item.id}--p`}>
                                     {item.myrole.length > 150 ?

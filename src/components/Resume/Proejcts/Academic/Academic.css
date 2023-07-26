@@ -1,49 +1,80 @@
-.bitbeat--col {
-    display: grid;
-    place-items: center;
-    flex-grow: 1;
+ .bitbeat--col {
+     /* display: grid;
+    place-items: center; */
+     flex-grow: 1;
 
-}
+ }
 
-.bitbeat--link {
-    color: #000000;
-    text-decoration: underline !important;
-    font-weight: bolder;
-    transition: 0.3s;
-}
+ .bitbeat--link {
+     display: grid;
+     place-items: center;
+     color: #000000;
+     text-decoration: underline !important;
+     font-weight: bolder;
+     transition: 0.3s;
+ }
 
-.bitbeat--link:hover {
-    color: #EDBB64;
-    filter: drop-shadow(0px 0px 2px #FFFFFF) !important;
-}
+ .bitbeat--link:hover {
+     color: #EDBB64;
+     filter: drop-shadow(0px 0px 2px #FFFFFF) !important;
+ }
 
-.bitbeat--logo {
-    max-height: 75px !important;
-    transition: 0.3s !important;
-    /* filter: sepia(100%) hue-rotate(180deg) saturate(200%); */
-}
+ .bitbeat--logo--col {
+     margin-left: auto !important;
+     margin-right: auto !important;
+ }
 
-.bitbeat--link h5 {
-    margin-bottom: 0;
-    filter: drop-shadow(0px 0px 5px #FFFFFF) !important;
-    transition: 0.3s
-}
+ .bitbeat--logo {
+     max-height: 75px !important;
+     transition: 0.3s !important;
+     /* filter: sepia(100%) hue-rotate(180deg) saturate(200%); */
+ }
+
+ .bitbeat--link h5 {
+     margin-bottom: 0;
+     filter: drop-shadow(0px 0px 5px #FFFFFF) !important;
+     transition: 0.3s
+ }
 
 
-.bitbeat--link:hover .bitbeat--logo {
-    transform: scale(1.2);
-}
+ .bitbeat--link:hover .bitbeat--logo {
+     transform: scale(1.2);
+ }
 
-.bitbeat--link:hover .bitbeat--logo,
-.bitbeat--link:hover h5,
-.bitbeat--link:hover h6,
-.bitbeat--link:hover p {
-    filter: drop-shadow(0px 0px 5px #EDBB64) !important;
-}
+ .bitbeat--link:hover .bitbeat--logo,
+ .bitbeat--link:hover h5,
+ .bitbeat--link:hover h6,
+ .bitbeat--link:hover p {
+     filter: drop-shadow(0px 0px 5px #EDBB64) !important;
+ }
 
-.my--role--bitbeat--p {
-    color: #000000;
-    text-align: justify;
-    text-indent: 1em;
-    transition: 0.3s;
-}
+ .my--role--bitbeat--p {
+     color: #000000;
+     text-align: justify;
+     text-indent: 1em;
+     transition: 0.3s;
+ }
+
+ @media (max-width: 575px) {
+
+     .bitbeat--logo {
+         aspect-ratio: 2/1;
+         object-fit: contain;
+         display: flex !important;
+         justify-content: center !important;
+         align-items: center !important;
+     }
+
+     .project--links--section {
+         /* display: none !important; */
+         width: auto;
+         margin-top: auto !important;
+         margin-bottom: auto !important;
+     }
+
+     .bitbeat--link svg {
+         margin-left: 0 !important;
+
+     }
+
+ }

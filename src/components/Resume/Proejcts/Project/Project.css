@@ -12,6 +12,7 @@
 
 @media (max-width: 767px) {
 
+    .project--parent--col:first-child,
     .project--parent--col:nth-child(2),
     .project--parent--col {
         margin-top: 43px !important;
