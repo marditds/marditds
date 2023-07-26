@@ -1,8 +1,8 @@
-.chosn--col {
+/* .chosn--col {
     display: grid;
     place-items: center;
     flex-grow: 1;
-}
+} */
 
 .chosn--link {
     display: grid;
@@ -15,6 +15,8 @@
 }
 
 .chosn--logo {
+    margin-left: auto !important;
+    margin-right: auto !important;
     max-height: 75px !important;
     /* filter: sepia(100%) hue-rotate(180deg) saturate(300%); */
     transition: 0.3s !important;
@@ -67,3 +69,36 @@
 .my--role--chosn--p:hover {
     color: #ffffff;
 } */
+
+.project--links--section {
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    /* .chosn--col {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: end;
+        flex-grow: 1;
+    } */
+
+    .chosn--logo {
+        margin-bottom: auto !important;
+        margin-top: auto !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .project--links--section {
+        /* display: none !important; */
+        width: auto;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+
+    .chosn--link svg {
+        margin-left: 0 !important;
+
+    }
+
+}
