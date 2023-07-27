@@ -9,11 +9,9 @@ export const Resume = () => {
     return (
 
         <>
-
             <Skills />
             <Education />
             <Projects />
-
         </>
     )
 }
