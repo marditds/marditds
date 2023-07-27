@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom'
-import { Row, Col, Image, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
+import { Row, Col, Image } from 'react-bootstrap';
 import { FiExternalLink } from 'react-icons/fi';
 // import { BsCaretDown, BsCaretUp } from 'react-icons/bs';
 import { AiOutlineGithub } from 'react-icons/ai';
@@ -8,7 +8,6 @@ import './Project.css';
 
 export const Project = ({ data }) => {
 
-    const { pathname } = useLocation();
     const [projectData, setProjectData] = useState(data);
 
     useEffect(() => {
@@ -53,8 +52,8 @@ export const Project = ({ data }) => {
                             <Col
                                 className={`${item.id}--col project--col`}
                             >
-                                <div className='d-flex justify-content-evenly d-sm-grid'>
-                                    <Col xs={3} sm={6} className={`${item.id}--logo--col d-flex justify-content-center
+                                <div className='d-flex justify-content-evenly d-md-grid'>
+                                    <Col xs={3} sm={4} md={6} className={`${item.id}--logo--col d-flex justify-content-center
                                     align-items-start`}>
                                         <Image
                                             src={item.avatar}
@@ -64,23 +63,24 @@ export const Project = ({ data }) => {
                                     </Col>
                                     <Col>
                                         <section>
-                                            <h5 className='mb-1 text-start text-sm-center fw-bolder'>{item.title}</h5>
+                                            <h5 className='mb-1 text-start text-md-center fw-bolder'>{item.title}</h5>
                                             <h6>{item.desc}</h6>
                                             <h6>Project type: <strong>{item.type}</strong></h6>
-                                            <div className='d-flex justify-content-evenly align-items-center mx-auto'>
+                                            <div className='d-flex justify-content-start justify-content-md-evenly align-items-center mx-auto'>
                                                 <Link
                                                     to={item.url}
                                                     target='_blank'
                                                     className={`${item.id}--link    text-decoration-underline`}
                                                 >
                                                     {/* View Project */}
-                                                    <FiExternalLink size={22} className='ms-1' />
+                                                    <FiExternalLink size={22} />
                                                 </Link>
                                                 <Link
                                                     to={item.github}
                                                     target='_blank'
-                                                    className={item.category === 'professional' ? 'd-none' : `${item.id}--link    `}
+                                                    className={item.category === 'professional' ? 'd-none' : `${item.id}--link ms-3 ms-md-0`}
                                                 >
+                                                    {/* View GitHub */}
                                                     <AiOutlineGithub size={25} />
                                                 </Link>
                                             </div>

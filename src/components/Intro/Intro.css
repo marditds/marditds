@@ -1,9 +1,6 @@
 .intro--mother--container {
-    background-image: url('../../assets/faceLeft.png');
-    background-position: center left;
-    background-size: 30vh;
-    background-repeat: no-repeat;
-    background-color: #B1CAF6;
+
+    /* background-color: #B1CAF6; */
     min-height: 100vh;
     flex-grow: 1;
     display: grid;
