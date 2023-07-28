@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import { Container, Button } from 'react-bootstrap';
+import { Container, Button, Image } from 'react-bootstrap';
 import { Titles } from './Titles/Titles';
 import { LuChevronDown, LuChevronsDown } from 'react-icons/lu';
 import { RxEnvelopeClosed, RxEnvelopeOpen } from 'react-icons/rx';
 import './Intro.css';
+import name from '../../assets/name.png';
 
 export const Intro = () => {
 
     const [isExpanded, setIsExpanded] = useState(false);
     const [isClicked, setIsCicked] = useState(false);
-    const [cntctIcn, setCntctIcn] = useState(<RxEnvelopeClosed size={35} className='mail' />)
+    const [cntctIcn, setCntctIcn] = useState(<RxEnvelopeClosed size={35} className='mail' />);
 
     const handleReadMore = () => {
         setIsExpanded((preVal) => !preVal);
@@ -116,7 +117,11 @@ export const Intro = () => {
                             </span>
                         </Link>
                     </p>
-
+                    <p className='regards--txt mb-1 mt-5'>Best regards,
+                    </p>
+                    <p className='d-flex align-items-baseline fs-3'>
+                        <Image src={name} className='name--img' fluid /><span className='lname--txt'> DerSoukiassian</span>
+                    </p>
                 </div>
             </Container>
         </div>

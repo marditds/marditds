@@ -66,3 +66,9 @@
         font-size: 19px;
     }
 }
+
+@media (max-height: 575px) {
+    .education--content {
+        padding-top: 40px;
+    }
+}
