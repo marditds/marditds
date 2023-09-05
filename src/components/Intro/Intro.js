@@ -60,7 +60,7 @@ export const Intro = () => {
                     <Titles />
 
                     <p className='mt-5 check--resume--txt'>
-                        Check out my skills here.
+                        Check out my <strong>skills</strong> here.
                         <Link to={{
                             pathname: '/',
                             hash: '#skills',
@@ -74,7 +74,7 @@ export const Intro = () => {
                         </Link>
                     </p>
                     <p className='mt-2 check--education--txt'>
-                        Check out my education below that.
+                        Check out my <strong>education</strong> below that.
                         <Link to={{
                             pathname: '/',
                             hash: '#education',
@@ -89,7 +89,7 @@ export const Intro = () => {
                     </p>
 
                     <p className='mt-2 check--education--txt'>
-                        View my projects
+                        View my <strong>projects</strong>
                         <Link to={{
                             pathname: '/',
                             hash: '#projects',
