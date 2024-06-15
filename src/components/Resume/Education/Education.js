@@ -56,7 +56,7 @@ export const Education = () => {
                     <section className=''>
                         <h3>Education</h3>
 
-                        <p>I hold a
+                        <p>I earned a
                             <span className='bs--span'>
                                 Bachelor's degree
                                 <span>
@@ -76,7 +76,7 @@ export const Education = () => {
                             from California State University - Northridge
                             <Link to={'https://www.csun.edu/'} target='_blank'>
                                 <Image src={CSUNLogo} className='school--logo' fluid />
-                            </Link>. In addition to this, I have also obtained an
+                            </Link>. Additionally, I have obtained an
                             <span className='as--span'>
                                 Associate of Science degree
                                 <span>
@@ -89,7 +89,7 @@ export const Education = () => {
                                         size={screenSize.width > 575 ? 35 : 25} />
                                 </span>
                             </span>
-                            and another
+                            and an
                             <span className='as--span'>
                                 Associate of Science degree
                                 <span>

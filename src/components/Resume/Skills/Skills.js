@@ -20,12 +20,7 @@ export const Skills = () => {
                 behavior: 'smooth',
             });
         }
-        // if (skills) {
-        //     window.scrollTo({
-        //         top: skills.offsetTop,
-        //         behavior: 'smooth',
-        //     });
-        // } 
+
 
     };
 
@@ -34,7 +29,7 @@ export const Skills = () => {
             <Container fluid className='prgrm--row'>
                 <Container>
                     <section>
-                        <h3 className=''>Programming Languages</h3>
+                        <h3 className=''>Stack</h3>
                         <Programming />
                     </section>
                 </Container>
